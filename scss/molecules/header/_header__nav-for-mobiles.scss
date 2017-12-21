@@ -1,0 +1,19 @@
+//MOLECULES
+//.........HEADER__NAV-FOR-MOBILES
+//
+
+ul.header__nav-for-mobiles{//this molecule could either be hide or visible
+  @media (max-width:480px){//it's visible
+    &--visible{
+      display: flex;
+      position: relative;
+      width: 100%;
+      background-color:white;        
+      }
+    }
+  @media (min-width:481px){//it's hidden
+    &--hidden{
+      display: none;
+    }
+  }
+}

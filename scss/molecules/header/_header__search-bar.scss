@@ -1,0 +1,15 @@
+//MOLECULES
+//.........HEADER__SEARCH-BAR
+//
+
+.header__search-bar{
+  display: none;
+  &--show{
+    display: block;
+    position: absolute;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(green,.6);
+  }
+}

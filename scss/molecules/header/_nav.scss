@@ -1,0 +1,24 @@
+//MOLECULES
+//.........NAV
+//
+
+.nav{
+  background: pink;
+  &--mobile-layout{
+    @media(max-width:480px){
+      position: fixed;
+      top:0;
+      left:-100vw;
+      width:80%;
+    }
+  }
+  &--big-screen-layout{
+    @media(min-width:481px){
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+  }
+
+}

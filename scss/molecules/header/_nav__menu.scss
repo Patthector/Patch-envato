@@ -1,0 +1,22 @@
+//MOLECULES
+//.........NAV__MENU
+//
+ul.nav__menu{
+  &--layout{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  @media(min-width:481px){
+    &--big-screens-layout{
+      flex-direction: row;
+      flex-wrap: wrap;
+      //temporally
+      li{
+        flex:1 50%;
+      }
+    }
+  }
+
+}

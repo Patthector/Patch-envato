@@ -1,0 +1,12 @@
+//MOLECULES
+//.........NAV__SOCIAL-MEDIA
+//
+
+.nav__social-media-menu{
+  &--layout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
