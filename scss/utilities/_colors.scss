@@ -29,8 +29,9 @@ $white:                     #fff;
 $midnight-blue:             #036;
 $black:                     #000;
 // Common colors
+//============
 $color-background:          $white;
-$color-background-shade:    $black;
+$color-background-shade:    getColor("scale-of-greys","Silver");
 $color-text:                getColor("scale-of-greys","Tundora");
 $color-text-weak:           getColor("scale-of-greys","Nobel");
 $color-text-strong:         getColor("scale-of-greys","Cod Grey");
@@ -50,6 +51,12 @@ $color-note:                #666;
 $color-link:                $color-primary;
 $color-link-hover:          $color-secondary;
 $color-link-visited:        $midnight-blue;
+
+//Icons
+//====
+$color-icon:                $color-text;
+$color-icon-hover:          $color-text-strong;
+$color-icon-visited:        $color-text-weak;
 
 
 // Selections

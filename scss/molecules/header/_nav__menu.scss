@@ -2,11 +2,15 @@
 //.........NAV__MENU
 //
 ul.nav__menu{
+  @include reset-list;
+  @include reset-content($ml:20px);
   &--layout{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-around;
+    width: 90%;
+    @include reset-content($mt:20px,$mb:10px);
   }
   @media(min-width:481px){
     &--big-screens-layout{

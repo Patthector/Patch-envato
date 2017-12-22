@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,600");
 article,
 aside,
 details,
@@ -194,7 +195,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   color: #4d4d4d;
-  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
   min-height: 100%;
   overflow-x: hidden;
   text-rendering: optimizeLegibility; }
@@ -218,20 +219,68 @@ h6 {
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: normal; }
 
+ul {
+  list-style: none; }
+
 h1.header__main-heading {
   display: block;
   width: 100%;
-  color: navy; }
+  font-family: "Oswald", sans-serif; }
 
-@media (max-width: 480px) {
-  ul.header__nav-for-mobiles--visible {
-    display: flex;
+.header__nav-for-mobiles__item {
+  flex: 1 50%; }
+  .header__nav-for-mobiles__item--left {
+    text-align: left;
     position: relative;
+    left: 10px;
+    transition: all 1s ease; }
+  .header__nav-for-mobiles__item--right {
+    text-align: right; }
+
+.link {
+  color: #000;
+  position: relative; }
+
+.nav__menu__item {
+  margin: 0;
+  padding-bottom: 4px; }
+
+.nav__link--styles {
+  font-size: 1.3333333333em;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative; }
+  .nav__link--styles:hover:after, .nav__link--styles:active:after, .nav__link--styles:focus:after {
+    content: "";
+    display: block;
+    position: absolute;
     width: 100%;
-    background-color: white; } }
-@media (min-width: 481px) {
-  ul.header__nav-for-mobiles--hidden {
-    display: none; } }
+    bottom: 2px;
+    border-bottom: 10px solid yellow;
+    z-index: -1; }
+
+ul.header__nav-for-mobiles {
+  width: 100%;
+  position: relative; }
+
+.header__nav-for-mobiles--layout {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  background: white;
+  box-shadow: 0 1px 2px #cccccc;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 10px; }
+  @media (min-width: 481px) {
+    .header__nav-for-mobiles--layout {
+      display: none; } }
 
 .header__search-bar {
   display: none; }
@@ -244,13 +293,18 @@ h1.header__main-heading {
     background: rgba(0, 128, 0, 0.6); }
 
 .nav {
-  background: pink; }
+  background: #fff;
+  overflow: auto; }
   @media (max-width: 480px) {
     .nav--mobile-layout {
       position: fixed;
       top: 0;
-      left: -100vw;
-      width: 80%; } }
+      left: -500px;
+      width: 80vw;
+      min-height: 100vh;
+      max-height: 100vh;
+      transition: all 1.5s ease;
+      box-shadow: 2px 0 3px #cccccc; } }
   @media (min-width: 481px) {
     .nav--big-screen-layout {
       display: flex;
@@ -258,23 +312,43 @@ h1.header__main-heading {
       justify-content: center;
       flex-wrap: nowrap; } }
 
-ul.nav__menu--layout {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center; }
-@media (min-width: 481px) {
-  ul.nav__menu--big-screens-layout {
-    flex-direction: row;
-    flex-wrap: wrap; }
-    ul.nav__menu--big-screens-layout li {
-      flex: 1 50%; } }
+ul.nav__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px; }
+  ul.nav__menu--layout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  @media (min-width: 481px) {
+    ul.nav__menu--big-screens-layout {
+      flex-direction: row;
+      flex-wrap: wrap; }
+      ul.nav__menu--big-screens-layout li {
+        flex: 1 50%; } }
 
 .nav__social-media-menu--layout {
+  width: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start; }
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-top: 40px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 10px; }
 
 main .flex-main {
   display: flex;
@@ -303,13 +377,18 @@ header {
   justify-content: center; }
 
 .nav--mobile-show {
-  left: 0; }
+  left: 0;
+  transition: all 1s ease; }
 
-.link-menu--moved {
+.icon-menu--moved {
   position: absolute;
-  top: 0;
-  right: 10vw;
-  display: inline-block; }
+  background: #fff;
+  top: 10px;
+  left: 85vw;
+  display: inline-block;
+  width: 10vw;
+  z-index: 100000;
+  transition: all 1s .08s ease; }
 
 @media print {
   *:before, *:after {

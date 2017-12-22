@@ -3,17 +3,24 @@
 //
 
 .nav{
-  background: pink;
-  &--mobile-layout{
+  background: $color-background;
+
+  overflow:auto;
     @media(max-width:480px){
+      &--mobile-layout{
       position: fixed;
       top:0;
-      left:-100vw;
-      width:80%;
+      left:-500px;
+      width:80vw;
+      min-height: 100vh;
+      max-height: 100vh;
+      transition: all 1.5s ease;
+      box-shadow: 2px 0 3px $color-background-shade;
     }
   }
-  &--big-screen-layout{
+
     @media(min-width:481px){
+      &--big-screen-layout{
       display: flex;
       flex-direction: column;
       justify-content: center;

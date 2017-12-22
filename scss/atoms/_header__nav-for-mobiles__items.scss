@@ -1,0 +1,16 @@
+//ATOMS
+//.....HEADER__NAV-FOR-MOBILES__ITEMS
+//
+
+.header__nav-for-mobiles__item{
+  flex:1 50%;
+  &--left{
+    text-align: left;
+    position: relative;
+    left:10px;
+    transition: all 1s ease;
+  }
+  &--right{
+    text-align:right;
+  }
+}

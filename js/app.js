@@ -2,10 +2,10 @@ console.log("Boun giorno");
 
 $(document).ready(function() {
 
-  $("#link-menu").click(function(e){
+  $("#icon-menu").click(function(e){
     e.preventDefault();
     $("#nav").toggleClass("nav--mobile-show");
-    $("#link-menu").toggleClass("link-menu--moved");
+    $("#icon-menu").toggleClass("icon-menu--moved");
   });
 
   $("#link-search").click(function(e){

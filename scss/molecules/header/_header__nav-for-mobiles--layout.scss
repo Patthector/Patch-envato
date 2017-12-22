@@ -1,0 +1,26 @@
+//LAYOUT
+//......HEADER__NAV-FOR-MOBILES--LAYOUT
+//
+
+.header__nav-for-mobiles{
+  &--layout{
+    box-sizing: border-box;
+    //FLEX
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    //...
+    position: relative;
+    width:100%;
+    background: white;
+    //BOX-SHADOW
+    box-shadow: 0 1px 2px $color-background-shade;
+    @include reset-list;
+    padding:10px;
+    //...
+    @media (min-width:481px){//it's hidden
+      display: none;
+    }
+  }
+}

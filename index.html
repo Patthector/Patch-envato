@@ -45,6 +45,8 @@
     <link rel="icon" type="image/ico" href="favicon.ico">
     <link rel="icon" type="image/png" href="favicon.png">-->
 
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
     <!-- CSS, you gotta have style -->
     <link rel="stylesheet" href="css/styles.css">
 
@@ -63,9 +65,9 @@
     <main id = "main" class = "flex-main grid">
 <!--HEADER-->
       <header class = "header">
-        <ul class = "header__nav-for-mobiles header__nav-for-mobiles--visible header__nav-for-mobiles--hidden">
-          <li class = "header__nav-for-mobiles__item"><a id = "link-menu" href = "#"><i>MENU</i></a></li>
-          <li class = "header__nav-for-mobiles__item"><a id = "link-search" href = "#"><i>LUPA</i></a></li>
+        <ul class = "header__nav-for-mobiles header__nav-for-mobiles--layout">
+          <li id = "icon-menu" class = "header__nav-for-mobiles__item header__nav-for-mobiles__item--left"><a  class = "link" href = "#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+          <li class = "header__nav-for-mobiles__item header__nav-for-mobiles__item--right"><a id = "link-search" class = "link" href = "#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
         </ul>
         <div id = "header__search-bar" class = "header__search-bar">
           <button id = "header__search-bar__button-exit">X</button>
@@ -79,16 +81,26 @@
 <!--NAV-->
         <nav id = "nav" class = "nav nav--mobile-layout nav--big-screen-layout">
           <ul class = "nav__menu nav__menu--layout nav__menu--big-screens-layout">
-            <li class = "nav__menu__item"><a href = "#">HOME</a></li>
-            <li class = "nav__menu__item"><a href = "#">GALLERY</a></li>
-            <li class = "nav__menu__item"><a href = "#">THEMES</a></li>
-            <li class = "nav__menu__item"><a href = "#">CONTACT</a></li>
+            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Home</a></li>
+            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Gallery</a></li>
+            <li class = "nav__menu__item">
+              <a class = "nav__link nav__link--styles" href = "#">Themes+</a>
+              <ul class = "nav__menu">
+                <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Boun Goirno e Bienvenute</a></li>
+                <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">La cosa piu importante</a></li>
+                <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Io e il lavoro</a></li>
+              </ul>
+            </li>
+            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Conctact</a></li>
+            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Video</a></li>
+            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Music</a></li>
+            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">About Us</a></li>
           </ul>
           <ul class = "nav__social-media-menu nav__social-media-menu--layout">
-            <li class = "nav__social-media-menu__item"><a href = "#">T</a></li>
-            <li class = "nav__social-media-menu__item"><a href = "#">F</a></li>
-            <li class = "nav__social-media-menu__item"><a href = "#">I</a></li>
-            <li class = "nav__social-media-menu__item"><a href = "#">Y</a></li>
+            <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
           </ul>
         </nav>
       </header>
