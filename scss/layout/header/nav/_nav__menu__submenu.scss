@@ -1,0 +1,9 @@
+//LAYOUT
+//......NAV__MENU__SUBMENU
+//
+
+.nav__menu__submenu{
+  @media(min-width:481px){
+    display: none;
+  }
+}

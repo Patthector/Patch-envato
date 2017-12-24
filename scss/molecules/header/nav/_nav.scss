@@ -4,11 +4,11 @@
 
 .nav{
   background: $color-background;
-
-  overflow:auto;
+  z-index:7000;
     @media(max-width:480px){
       &--mobile-layout{
       position: fixed;
+      overflow:auto;
       top:0;
       left:-500px;
       width:80vw;
@@ -18,13 +18,13 @@
       box-shadow: 2px 0 3px $color-background-shade;
     }
   }
-
     @media(min-width:481px){
       &--big-screen-layout{
       display: flex;
       flex-direction: column;
       justify-content: center;
       flex-wrap: nowrap;
+      position:relative;
     }
   }
 

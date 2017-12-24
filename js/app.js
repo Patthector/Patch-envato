@@ -2,10 +2,19 @@ console.log("Boun giorno");
 
 $(document).ready(function() {
 
+  $("#nav li").mouseenter(function(e){
+    if("nav__menu__submenu__item" === e.currentTarget.classList[1]){
+      var w = $(this).children().eq(0).width();
+      console.log(w);
+      $(this).children().eq(1).css('left',w+5);
+    }
+  });
+
   $("#icon-menu").click(function(e){
     e.preventDefault();
     $("#nav").toggleClass("nav--mobile-show");
-    $("#icon-menu").toggleClass("icon-menu--moved");
+    $("#icon-menu").toggleClass("icon-menu--clicked");
+    $("#icon-search").toggleClass("icon-search--clicked");
   });
 
   $("#link-search").click(function(e){

@@ -9,8 +9,8 @@
   letter-spacing: 1px;
   position: relative;
 //HOVER
-  @include hover{
-    &:after{
+
+    &:hover:after{
       content:"";
       display: block;
       position: absolute;
@@ -19,7 +19,7 @@
       border-bottom:10px solid yellow;
       z-index:-1;
     }
-  };
+
 //...
 
 }

@@ -67,7 +67,7 @@
       <header class = "header">
         <ul class = "header__nav-for-mobiles header__nav-for-mobiles--layout">
           <li id = "icon-menu" class = "header__nav-for-mobiles__item header__nav-for-mobiles__item--left"><a  class = "link" href = "#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-          <li class = "header__nav-for-mobiles__item header__nav-for-mobiles__item--right"><a id = "link-search" class = "link" href = "#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+          <li id = "icon-search" class = "header__nav-for-mobiles__item header__nav-for-mobiles__item--right"><a id = "link-search" class = "link" href = "#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
         </ul>
         <div id = "header__search-bar" class = "header__search-bar">
           <button id = "header__search-bar__button-exit">X</button>
@@ -83,11 +83,17 @@
           <ul class = "nav__menu nav__menu--layout nav__menu--big-screens-layout">
             <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Home</a></li>
             <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Gallery</a></li>
-            <li class = "nav__menu__item">
+            <li class = "nav__menu__item nav__menu__submenu__item">
               <a class = "nav__link nav__link--styles" href = "#">Themes+</a>
-              <ul class = "nav__menu">
+              <ul class = "nav__menu__submenu">
                 <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Boun Goirno e Bienvenute</a></li>
-                <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">La cosa piu importante</a></li>
+                <li class = "nav__menu__item nav__menu__submenu__item"><a class = "nav__link nav__link--styles" href = "#">La cosa piu de tutti</a>
+                  <ul class = "nav__menu__submenu">
+                    <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Boun Goirno</a></li>
+                    <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">La cosa piu importante</a></li>
+                    <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Io e il lavoro</a></li>
+                  </ul>
+                </li>
                 <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Io e il lavoro</a></li>
               </ul>
             </li>

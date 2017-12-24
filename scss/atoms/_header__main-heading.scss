@@ -6,4 +6,9 @@ h1.header__main-heading{
   display: block;
   width: 100%;
   font-family: $font-family-heading;
+  font-size:em(60);
+  color:$black;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }

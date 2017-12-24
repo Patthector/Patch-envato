@@ -9,17 +9,8 @@
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
 
-//HEADER__NAV-FOR-MOBILES
-@import "./header/header__nav-for-mobiles.scss";
-//HEADER__NAV-FOR-MOBILES--LAYOUT
-@import "./header/header__nav-for-mobiles--layout.scss";
-//HEADER__SEARCH-BAR
-@import "./header/header__search-bar.scss";
+
+//HEADER__NAV-FOR-MOBILES-INDEX
+@import "./header/header__nav-for-mobiles/index.scss";
 //NAV
-@import "./header/nav.scss";
-//NAV__MENU
-@import "./header/nav__menu.scss";
-//NAV-MENU-LAYOUT
-@import "./header/nav__menu--layout.scss";
-//NAV__SOCIAL-MEDIA-MENU
-@import "./header/nav__social-media-menu.scss";
+@import "./header/nav/index.scss";

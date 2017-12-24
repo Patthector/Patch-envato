@@ -1,0 +1,14 @@
+//MOLECULES
+//.........NAV__MENU__SUBMENU
+//
+.nav__menu__submenu{
+  @include reset-list;
+  z-index:8000;
+  &__item{
+    @media (min-width: 481px){
+      & li{
+        font-size: 12px;
+      }
+    }
+  }
+}

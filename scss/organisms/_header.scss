@@ -4,10 +4,10 @@
 
 header{
   width:100%;
-  background-color:yellow;
   position:relative;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
+  z-index: 6000;
 }

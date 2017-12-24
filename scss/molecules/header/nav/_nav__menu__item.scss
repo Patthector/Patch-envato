@@ -1,0 +1,22 @@
+//MOLECULES
+//.........NAV__MENU__ITEM
+//
+.nav__menu__item{
+  position: relative;
+  &:hover>.nav__menu__submenu {
+    @media(min-width:481px){
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: white;
+      box-shadow: 0 0 10px $color-background-shade;
+      border-radius: 4px;
+      z-index:100;
+      min-width: 200px;
+      max-width: 100%;
+      padding: 10px;
+      margin: 4px;
+    }
+  }
+}
