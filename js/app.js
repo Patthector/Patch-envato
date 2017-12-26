@@ -42,15 +42,43 @@ $(document).ready(function() {
     let array = card.children();
     let height = 0;
     for (var i = 0; i < array.length; i++) {
-      if(array.eq(i).css("display") === "none"){
+      if(array.eq(i).css("display") === "none" || array.eq(i).hasClass("not-count")){
+        //if the child/div is a "card__img-to-the-left-layout" DONT COUNT IT
         continue;
       }
-      height += array.eq(i).height();
+      else if(array.eq(i).hasClass("card__img-to-the-left-layout") || array.eq(i).hasClass("card__img-to-the-right-layout")){
+        height = FloatingLayouts(array.eq(i));break;
+      }
+      else{
+        height += array.eq(i).height();
+      }
       //ADD THE MARGIN&&PADDING OF PARAGRAPHs,DIVs,HEADINGs
       //height += 10 + 12;
     }
     let repetitions = Math.ceil(height / 10);/*10px*/
     card.css(`grid-row-end`,`span ${repetitions}`);
+  }
+
+  function FloatingLayouts(card){
+    let array = card.children();
+    let height = 0;
+    let floatImgHeight = 0;
+    let contentHeight = 0;
+    for (var i = 0; i < array.length; i++) {
+      if(array.eq(i).css("display") === "none" || array.eq(i).hasClass("not-count")){
+        //if the child/div is a "card__img-to-the-left-layout" DONT COUNT IT
+        continue;
+      }
+      else if(array.eq(i).hasClass("card__img-to-the-left-layout") || array.eq(i).hasClass("card__img-to-the-right-layout"))
+      {
+        floatImgHeight += array.eq(i).height();
+      }
+
+      else{
+        contentHeight += array.eq(i).height();
+      }
+    }
+    return floatImgHeight?floatImgHeight>contentHeight:contentHeight;
   }
   //
   //END OF THE GRID

@@ -4,7 +4,6 @@
 
 .nav{
   background: $color-background;
-  z-index:7000;
     @media(max-width:480px){
       &--mobile-layout{
       position: fixed;

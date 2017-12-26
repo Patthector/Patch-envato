@@ -53,23 +53,16 @@
     <!-- Modernizer, cause some browsers suck -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
-    <style>
-      section{
-        background: rgba(#000,0.5);
-        border:3px solid black;
-        border-radius:10px;
-      }
-    </style>
     </head>
   <body>
     <main id = "main" class = "flex-main grid">
 <!--HEADER-->
       <header class = "header">
-        <ul class = "header__nav-for-mobiles header__nav-for-mobiles--layout">
+        <ul class = "header__nav-for-mobiles header__nav-for-mobiles--layout not-count">
           <li id = "icon-menu" class = "header__nav-for-mobiles__item header__nav-for-mobiles__item--left"><a  class = "link" href = "#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
           <li id = "icon-search" class = "header__nav-for-mobiles__item header__nav-for-mobiles__item--right"><a id = "link-search" class = "link" href = "#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
         </ul>
-        <div id = "header__search-bar" class = "header__search-bar">
+        <div id = "header__search-bar" class = "header__search-bar not-count">
           <button id = "header__search-bar__button-exit">X</button>
           <form class = "form">
             <input id = "form__input-search" class = "form__input" placeholder="Search" type = "text" />
@@ -111,44 +104,73 @@
         </nav>
       </header>
 <!--SECTIONS-->
-      <section>
-        <div class = "">
-          <img scr = "#" alt = "photo#" />
+      <section class = "card card--layout">
+        <div class = "card--wide-img-layout">
+          <img src = "./img/banani.jpeg" alt = "photo#" />
         </div>
-        <h2>This is the heading</h2>
-        <p>This is a small summary of the whole article that you can
+        <h2 class = "card__heading">This is the heading</h2>
+        <p class = "card__pag">This is a small summary of the whole article that you can
           find by clicking on read more. Any recomendation let us know.</p>
       </section>
-      <section>
-        <div class = "">
-          <img scr = "#" alt = "photo#" />
+      <section class = "card card--layout">
+        <div class = "card__img-to-the-left-layout">
+          <img src = "./img/fioregialla.jpeg" alt = "photo#" />
         </div>
-        <h2>This is the heading</h2>
-        <p>This is a small summary of the whole article that you can
+        <h2 class = "card__heading">This is the heading</h2>
+        <p class = "card__pag">This is a small summary of the whole article that you can
+          find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
+              find by clicking on read more. Any recomendation let us know.</p>
+      </section>
+      <section class = "card card--layout">
+        <div class = "card__img-to-the-right-layout">
+          <img src = "./img/fire.jpeg" alt = "photo#" />
+        </div>
+        <h2 class = "card__heading">This is the heading</h2>
+        <p class = "card__pag">This is a small summary of the whole article that you can
+          find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.</p>
+      </section>
+      <section class = "card card--layout">
+        <div class = "card--wide-img-layout">
+          <img src = "./img/birra.jpeg" alt = "photo#" />
+        </div>
+        <h2 class = "card__heading">This is the heading</h2>
+        <p class = "card__pag">This is a small summary of the whole article that you can
           find by clicking on read more. Any recomendation let us know.</p>
       </section>
-      <section>
-        <div class = "">
-          <img scr = "#" alt = "photo#" />
+      <section class = "card card--layout">
+        <div class = "card--quote-layout">
+          <img src = "#" alt = "photo#" />
         </div>
-        <h2>This is the heading</h2>
-        <p>This is a small summary of the whole article that you can
+        <h2 class = "card__heading card__heading--quote">la cosa piu importante della vita 'e tu le amore mio..</h2>
+        <p class = "card__pag card__pag--quote">This is a small summary of the whole article that you can
           find by clicking on read more. Any recomendation let us know.</p>
       </section>
-      <section>
-        <div class = "">
-          <img scr = "#" alt = "photo#" />
+      <section class = "card card--layout">
+        <div class = "card--gallery-layout">
+          <img src = "./img/pinzas.jpeg" alt = "photo#" style = "grid-row-end:span 30"/>
+          <img src = "./img/herbapenne.jpeg" alt = "photo#" style = "grid-row-end:span 15"/>
+          <img src = "./img/pineapples.jpeg" alt = "photo#" style = "grid-row-end:span 15"/>
         </div>
-        <h2>This is the heading</h2>
-        <p>This is a small summary of the whole article that you can
+        <h2 class = "card__heading">This is the heading</h2>
+        <p class = "card__pag">This is a small summary of the whole article that you can
           find by clicking on read more. Any recomendation let us know.</p>
       </section>
-      <section>
-        <div class = "">
-          <img scr = "#" alt = "photo#" />
+      <section class = "card card--layout">
+        <div class = "card--img-background-layout">
+          <img src = "./img/l'juventus.jpg" alt = "photo#" />
+          <div class = "card--img-background-container-layout not-count">
+            <h2 class = "card__heading card__heading--img-background-layout">la cosa piu importante della vita 'e tu le amore mio..</h2>
+          </div>
         </div>
-        <h2>This is the heading</h2>
-        <p>This is a small summary of the whole article that you can
+      </section>
+      <section class = "card card--layout">
+        <div class = "card--large-img-layout">
+          <img src = "./img/lei.jpeg" alt = "photo#" />
+        </div>
+        <h2 class = "card__heading">This is the heading</h2>
+        <p class = "card__pag">This is a small summary of the whole article that you can
           find by clicking on read more. Any recomendation let us know.</p>
       </section>
     </main>

@@ -16,6 +16,8 @@ ul.nav__menu{
     &--big-screens-layout{
       flex-direction: row;
       flex-wrap: wrap;
+      z-index:1;
+      position: relative;
       //temporally
       li{
         flex:1 50%;

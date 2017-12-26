@@ -12,5 +12,11 @@
   }
   @media(min-width:781px){
       grid-template-columns: repeat(auto-fill,minmax(30%,1fr));
+      width: 90%;
+      margin: 20px 5%;
+
   }
+  /*@media(min-width:1024px){
+      grid-template-columns: repeat(auto-fill,minmax(22%,1fr));
+  }*/
 }

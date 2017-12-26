@@ -1,0 +1,24 @@
+//ATOMS
+//.....CARD__IMG-BACKGROUND
+//
+
+.card--img-background-layout{
+  position: relative;
+  img{
+    width:100%;
+    display: block;
+  }
+  & div.card--img-background-container-layout{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba($black,.6);
+  }
+
+}

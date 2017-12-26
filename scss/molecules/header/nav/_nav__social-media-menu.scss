@@ -4,11 +4,10 @@
 
 .nav__social-media-menu{
   &--layout{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
     @include reset-list;
     @include reset-content(0,0,0,0,40px,0,0,10px);
   }
