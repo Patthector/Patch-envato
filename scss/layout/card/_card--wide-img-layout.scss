@@ -2,9 +2,22 @@
 //......CARD--WIDE-IMG-LAYOUT
 //
 
+
 .card--wide-img-layout{
     width: 100%;
     img{
       width:100%;
     }
+    &~*{
+      width: 90%;
+      margin-left: 10%;
+    }
+}
+.card--wide-img-layout-category{
+  width: 95%;
+  margin-left: 0;
+  h2{//give it a class in the future
+    font-size:em(22,12);
+
+  }
 }

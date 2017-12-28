@@ -6,7 +6,17 @@
     display: block;
     width: 45%;
     float: right;
+    margin-left: 10px;
     img{
       width: 100%;
     }
+    &~*{
+      text-align: right;
+    }
+}
+.card__img-to-the-right-layout-category{
+    width: 95%;
+    margin-left: 10%;
+    margin-right: 0;
+    z-index: 1;
 }
