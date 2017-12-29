@@ -9,6 +9,9 @@
     flex-direction: row;
     flex-wrap: nowrap;
     @include reset-list;
-    @include reset-content(0,0,0,0,40px,0,0,10px);
+    @include reset-content(0,0,0,0,20px,0,0,20%);
+    li{
+      margin-right: 12px;
+    }
   }
 }

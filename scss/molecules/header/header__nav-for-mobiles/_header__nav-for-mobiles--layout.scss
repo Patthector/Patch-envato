@@ -18,6 +18,7 @@
     box-shadow: 0 1px 2px $color-background-shade;
     @include reset-list;
     padding:10px;
+    z-index: 8000;
     //...
     @media (min-width:481px){//it's hidden
       display: none;

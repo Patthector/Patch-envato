@@ -11,10 +11,6 @@
   img{
     width:100%;
   }
-  &~*{
-    box-sizing: border-box;
-    padding:0 10%;
-  }
 }
 .card--gallery-layout-category{
   width: 95%;

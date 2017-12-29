@@ -47,7 +47,8 @@ $(document).ready(function() {
         continue;
       }
       else if(array.eq(i).hasClass("card__img-to-the-left-layout") || array.eq(i).hasClass("card__img-to-the-right-layout")){
-        height = FloatingLayouts(array.eq(i));break;
+        height = FloatingLayouts(card);
+        break;
       }
       else{
         height += array.eq(i).height();
@@ -55,6 +56,10 @@ $(document).ready(function() {
       //ADD THE MARGIN&&PADDING OF PARAGRAPHs,DIVs,HEADINGs
       //height += 10 + 12;
     }
+    if(i>0){//NON FOR THE HEADER
+    height +=12;
+    }
+
     let repetitions = Math.ceil(height / 10);/*10px*/
     card.css(`grid-row-end`,`span ${repetitions}`);
   }
@@ -65,10 +70,13 @@ $(document).ready(function() {
     let floatImgHeight = 0;
     let contentHeight = 0;
     for (var i = 0; i < array.length; i++) {
+
+      console.log(array.eq(i));
       if(array.eq(i).css("display") === "none" || array.eq(i).hasClass("not-count")){
         //if the child/div is a "card__img-to-the-left-layout" DONT COUNT IT
         continue;
       }
+
       else if(array.eq(i).hasClass("card__img-to-the-left-layout") || array.eq(i).hasClass("card__img-to-the-right-layout"))
       {
         floatImgHeight += array.eq(i).height();
@@ -78,7 +86,7 @@ $(document).ready(function() {
         contentHeight += array.eq(i).height();
       }
     }
-    return floatImgHeight?floatImgHeight>contentHeight:contentHeight;
+    return Math.max(floatImgHeight,contentHeight);
   }
   //
   //END OF THE GRID

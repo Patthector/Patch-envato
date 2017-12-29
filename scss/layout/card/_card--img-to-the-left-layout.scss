@@ -18,4 +18,17 @@
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  h2{//give it a class in the future
+    font-size:em(24,12);
+    font-weight: 600;
+  }
+  p{//give it a class in the future
+    font-size: em(14);
+    letter-spacing: .5px;
+    line-height: em(20,14);
+    color:$color-text;
+    width: 85%;
+    margin-left:10%;
+    margin-right:5%;
+  }
 }

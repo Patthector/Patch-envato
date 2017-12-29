@@ -8,10 +8,15 @@
       width:100%;
       display:block;
     }
+    &~p,&~h2{
+      margin-left: 0;
+      margin-right: 0;
+    }
 }
 
 .card--large-img-layout-category{
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+
 }

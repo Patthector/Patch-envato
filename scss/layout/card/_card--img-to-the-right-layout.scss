@@ -12,6 +12,8 @@
     }
     &~*{
       text-align: right;
+      width: 85%;
+      margin-right: 15%;
     }
 }
 .card__img-to-the-right-layout-category{
@@ -19,4 +21,16 @@
     margin-left: 10%;
     margin-right: 0;
     z-index: 1;
+    h2{//give it a class in the future
+      font-size:em(24,12);
+      font-weight: 600;
+    }
+    p{//give it a class in the future
+      font-size: em(14);
+      letter-spacing: .5px;
+      line-height: em(20,14);
+      color:$color-text;
+      width: 90%;
+      margin-right: 10%;
+    }
 }
