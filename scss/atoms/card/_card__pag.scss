@@ -4,6 +4,12 @@
 
 .card__pag{
   font-family:$font-family-default;
-  font-size:14px;
   color:$color-text;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+  padding: 0;
+  color:$color-text;
+  font-size: em(14);
+  letter-spacing: .5px;
+  line-height: em(20,14);
 }

@@ -15,6 +15,7 @@
       max-height: 100vh;
       transition: all 1.5s ease;
       box-shadow: 2px 0 3px $color-background-shade;
+      z-index:8000;
     }
   }
     @media(min-width:481px){
