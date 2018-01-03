@@ -514,14 +514,19 @@ ul.header__nav-for-mobiles {
       display: none; } }
 
 .header__search-bar {
-  display: none; }
-  .header__search-bar--show {
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 128, 0, 0.6); }
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  left: 100vw;
+  top: 0;
+  z-index: 8001;
+  transition: all .5s ease-out; }
+  .header__search-bar--styles {
+    background: #fff; }
 
 .nav {
   background: #fff; }
@@ -641,6 +646,16 @@ header {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center; }
+
+.header__search-bar--show {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 8001;
+  transition: all .7s ease-out; }
 
 .nav--mobile-show {
   left: 0;

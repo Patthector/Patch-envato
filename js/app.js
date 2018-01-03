@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   $("#link-search").click(function(e){
     e.preventDefault();
-    $("#header__search-bar").toggleClass("header__search-bar--show");
+    $("#header__search-bar").addClass("header__search-bar--show");
 
     $("#header__search-bar__button-exit").click(function(e){
         $("#header__search-bar").removeClass("header__search-bar--show");
