@@ -10,12 +10,9 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  align-items: flex-end;
   left: 100vw;
   top:0;
   z-index: 8001;
   transition: all .5s ease-out;
-  &--styles{
-    background: $white;
-
-  }
 }

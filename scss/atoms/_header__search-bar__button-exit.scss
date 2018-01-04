@@ -1,0 +1,35 @@
+//ATOMS
+//.....HEADER__SEARCH-BAR--BOTTON-EXIT
+//
+
+.header__search-bar__button-exit{
+  margin-right: 24px;//to avoid the scroll bar
+  margin-left: auto;
+  border: none;
+  background:$white;
+  color:$black;
+  font-size: em(48);
+  font-weight: 300;
+  font-family: $font-family-heading;
+}
+.form__input{
+  border: none;
+  width: 100%;
+  display: inline-block;
+  border-bottom: 2px solid $color-text-weak;
+  font-family: $font-family-heading;
+  font-size: em(48);
+  font-weight: 100;
+
+}
+.form{
+  margin: 1em;
+  margin-right: 36px;
+}
+.form__input-search{
+  display: inline-block;
+  color:black;
+  font-family: $font-family-default;
+  letter-spacing: .5px;
+  margin-top: em(12);
+}

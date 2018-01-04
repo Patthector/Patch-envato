@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald:100,300,400,600");
 article,
 aside,
 details,
@@ -421,6 +421,36 @@ h1.header__main-heading {
   .header__nav-for-mobiles__item--right {
     text-align: right; }
 
+.header__search-bar__button-exit {
+  margin-right: 24px;
+  margin-left: auto;
+  border: none;
+  background: #fff;
+  color: #000;
+  font-size: 3em;
+  font-weight: 300;
+  font-family: "Oswald", sans-serif; }
+
+.form__input {
+  border: none;
+  width: 100%;
+  display: inline-block;
+  border-bottom: 2px solid #b3b3b3;
+  font-family: "Oswald", sans-serif;
+  font-size: 3em;
+  font-weight: 100; }
+
+.form {
+  margin: 1em;
+  margin-right: 36px; }
+
+.form__input-search {
+  display: inline-block;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: .5px;
+  margin-top: 0.75em; }
+
 .link {
   color: #000;
   position: relative; }
@@ -521,12 +551,14 @@ ul.header__nav-for-mobiles {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
+  align-items: flex-end;
   left: 100vw;
   top: 0;
   z-index: 8001;
   transition: all .5s ease-out; }
-  .header__search-bar--styles {
-    background: #fff; }
+
+.header__search-bar--styles {
+  background: #fff; }
 
 .nav {
   background: #fff; }
@@ -648,7 +680,7 @@ header {
   justify-content: center; }
 
 .header__search-bar--show {
-  display: block;
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
