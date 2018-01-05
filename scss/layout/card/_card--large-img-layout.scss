@@ -3,20 +3,22 @@
 //
 
 .card--large-img-layout{
+
+}
+
+.large-img-layout-category{
+  .large-img-layout{
     width: 100%;
     img{
       width:100%;
       display:block;
     }
-    &~p,&~h2{
-      margin-left: 0;
-      margin-right: 0;
-    }
-}
-
-.card--large-img-layout-category{
+  }
+  p,h2{
+    margin-left: 0;
+    margin-right: 0;
+  }
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-
 }

@@ -65,8 +65,8 @@
         <div id = "header__search-bar" class = "header__search-bar header__search-bar--styles not-count">
           <button id = "header__search-bar__button-exit" class = "header__search-bar__button-exit">X</button>
           <form class = "form">
-            <input id = "form__input-search" class = "form__input" placeholder="Search" type = "text" />
-            <label for = "form__input-search" class = "form__input-search">Type below what you want to find</label>
+            <input id = "form__input-search" class = "form__input" placeholder ="Search .." type = "text" />
+            <label for = "form__input-search" class = "form__input-search-label">Type below what you want to find. Press Esc to cancel</label>
           </form>
         </div>
 <!--H1-->
@@ -103,118 +103,242 @@
           </ul>
         </nav>
       </header>
-      <section class = "card card--layout card--wide-img-layout-category">
-        <div class = "card--wide-img-layout">
-          <img src = "./img/mucco.jpeg" alt = "photo#" />
+
+      <section class = "card card--layout card--wide-img-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading card__heading--bold">This is the heading</h2>
-        <p class = "card__pag">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.</p>
+        <article class = "wide-img-layout-category">
+          <div class = "wide-img-layout">
+            <img src = "./img/mucco.jpeg" alt = "photo#" />
+          </div>
+          <h2 class = "card__heading card__heading--bold">This is the heading</h2>
+          <p class = "card__pag">This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
-      <section class = "card card--layout card--large-img-layout-category">
-        <div class = "card--large-img-layout">
-          <img src = "./img/lei.jpeg" alt = "photo#" />
+
+      <section class = "card card--layout card--large-img-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading">This is the heading</h2>
-        <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.</p>
+        <article class = "large-img-layout-category">
+          <div class = "large-img-layout">
+            <img src = "./img/lei.jpeg" alt = "photo#" />
+          </div>
+          <h2 class = "card__heading">This is the heading</h2>
+          <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
 <!--SECTION2-->
-      <section class = "card card--layout card__img-to-the-left-layout-category">
-        <div class = "card__img-to-the-left-layout">
-          <img src = "./img/walkinginto.jpeg" alt = "photo#" />
+      <section class = "card card--layout card--img-to-the-left-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading">This is the heading</h2>
-        <p class = "card__pag">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
+        <article class = "img-to-the-left-layout-category">
+          <div class = "img-to-the-left-layout">
+            <img src = "./img/walkinginto.jpeg" alt = "photo#" />
+          </div>
+          <h2 class = "card__heading">This is the heading</h2>
+          <p class = "card__pag">This is a small summary of the whole article that you can
             find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
-              find by clicking on read more. Any recomendation let us know.</p>
+              find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
+                find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
-      <section class = "card card--layout card--img-background-layout-category">
-        <div class = "card--img-background-layout">
-          <img src = "./img/lafamiglia.jpeg" alt = "photo#" />
-          <div class = "card--img-background-container-layout not-count">
+
+      <section class = "card card--layout card--img-background-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
+        </div>
+        <article class = "img-background-layout-category">
+          <div class = "img-background-layout">
+            <img src = "./img/lafamiglia.jpeg" alt = "photo#" />
+          </div>
+          <div class = "img-background-container-layout not-count">
             <h2 class = "card__heading card__heading--img-background-layout">la cosa piu importante della vita 'e tu le amore mio</h2>
           </div>
-        </div>
+        </article>
       </section>
-      <section class = "card card--layout card--gallery-layout-category">
-        <div class = "card--gallery-layout">
-          <img src = "./img/te.jpeg" alt = "photo#" style = "grid-row-end:span 30"/>
-          <img src = "./img/flag.jpeg" alt = "photo#" style = "grid-row-end:span 15"/>
-          <img src = "./img/bahia.jpeg" alt = "photo#" style = "grid-row-end:span 15"/>
+
+      <section class = "card card--layout card--gallery-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading">This is the heading</h2>
-        <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.</p>
+        <article class = "gallery-layout-category">
+          <div class = "gallery-layout">
+            <img class = "img-border-top img-border-left img-border-bottom img-border-right" src = "./img/te.jpeg" alt = "photo#" style = "grid-row-end:span 40"/>
+            <img class = "img-border-top img-border-right" src = "./img/flag.jpeg" alt = "photo#" style = "grid-row-end:span 20"/>
+            <img class = "img-border-top img-border-right img-border-bottom" src = "./img/bahia.jpeg" alt = "photo#" style = "grid-row-end:span 20"/>
+          </div>
+          <h2 class = "card__heading">This is the heading</h2>
+          <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
-      <section class = "card card--layout card--wide-img-layout-category">
-        <div class = "card--wide-img-layout">
-          <img src = "./img/yellowforest.jpeg" alt = "photo#" />
+
+      <section class = "card card--layout card--wide-img-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading">This is the heading</h2>
-        <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.</p>
+        <article class = "wide-img-layout-category">
+          <div class = "wide-img-layout">
+            <img src = "./img/yellowforest.jpeg" alt = "photo#" />
+          </div>
+          <h2 class = "card__heading">This is the heading</h2>
+          <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
-      <section class = "card card--layout card__img-to-the-right-layout-category">
-        <div class = "card__img-to-the-right-layout">
-          <img src = "./img/thewhole.jpeg" alt = "photo#" />
+
+      <section class = "card card--layout card--img-to-the-right-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading">This is the heading</h2>
-        <p class = "card__pag">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
-            find by clicking on read more. Any recomendation let us know..This is a small summary of the whole article that you can
-              find by clicking on read more. Any recomendation let us know.</p>
+        <article class = "img-to-the-right-layout-category">
+          <div class = "img-to-the-right-layout">
+            <img src = "./img/thewhole.jpeg" alt = "photo#" />
+          </div>
+          <h2 class = "card__heading">This is the heading</h2>
+          <p class = "card__pag">This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
+              find by clicking on read more. Any recomendation let us know..This is a small summary of the whole article that you can
+                find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
-      <section class = "card card--layout card--img-background-layout-category">
-        <div class = "card--img-background-layout">
-          <img src = "./img/lafamiglia.jpeg" alt = "photo#" />
-          <div class = "card--img-background-container-layout not-count">
+
+      <section class = "card card--layout card--img-background-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
+        </div>
+        <article class = "img-background-layout-category">
+          <div class = "img-background-layout">
+            <img src = "./img/lafamiglia.jpeg" alt = "photo#" />
+          </div>
+          <div class = "img-background-container-layout not-count">
             <h2 class = "card__heading card__heading--img-background-layout">la cosa piu importante della vita 'e tu le amore mio</h2>
           </div>
-        </div>
+        </article>
       </section>
 <!--SECTION2-->
-      <section class = "card card--layout card__img-to-the-right-layout-category">
-        <div class = "card__img-to-the-right-layout">
-          <img src = "./img/watchme.jpeg" alt = "photo#" />
+      <section class = "card card--layout card--img-to-the-right-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading">This is the heading</h2>
-        <p class = "card__pag">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
+        <article class = "img-to-the-right-layout-category">
+          <div class = "img-to-the-right-layout">
+            <img src = "./img/watchme.jpeg" alt = "photo#" />
+          </div>
+          <h2 class = "card__heading">This is the heading</h2>
+          <p class = "card__pag">This is a small summary of the whole article that you can
             find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
-              find by clicking on read more. Any recomendation let us know.</p>
+              find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
+                find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
       <!--SECTION-->
-      <section class = "card card--layout card--quote-layout-category">
-        <div class = "card--quote-layout">
+      <section class = "card card--layout card--quote-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
+        </div>
+        <article class = "quote-layout-category">
+        <div class = "quote-layout">
           <img src = "#" alt = "photo#" />
         </div>
         <h2 class = "card__heading card__heading--quote">la cosa piu importante della vita 'e tu le amore mio..'e tu le amore mio'e tu le amore mio</h2>
         <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
           find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
 <!--SECTION-->
-      <section class = "card card--layout card--wider-img-layout-category">
-        <div class = "card--wider-img-layout">
-          <img src = "./img/motoboy.jpeg" alt = "photo#" />
+      <section class = "card card--layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading">This is the heading</h2>
-        <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.</p>
+        <article class = "wider-img-layout-category">
+          <div class = "wider-img-layout">
+            <img src = "./img/motoboy.jpeg" alt = "photo#" />
+          </div>
+          <h2 class = "card__heading">This is the heading</h2>
+          <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
-      <section class = "card card--layout card--large-img-layout-category">
-        <div class = "card--large-img-layout">
-          <img src = "./img/laragazzarossa.jpeg" alt = "photo#" />
+
+      <section class = "card card--layout card--large-img-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading">This is the heading</h2>
-        <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.</p>
+        <article class = "large-img-layout-category">
+          <div class = "large-img-layout">
+            <img src = "./img/laragazzarossa.jpeg" alt = "photo#" />
+          </div>
+          <h2 class = "card__heading">This is the heading</h2>
+          <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
 <!--SECTION2-->
-      <section class = "card card--layout card__img-to-the-left-layout-category">
-        <div class = "card__img-to-the-left-layout">
+      <section class = "card card--layout card--img-to-the-right-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
+        </div>
+        <article class = "img-to-the-right-layout-category">
+        <div class = "img-to-the-right-layout">
           <img src = "./img/pranzo.jpeg" alt = "photo#" />
         </div>
         <h2 class = "card__heading">This is the heading</h2>
@@ -222,39 +346,75 @@
           find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
             find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
               find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
-      <section class = "card card--layout card--gallery-layout-category">
-        <div class = "card--gallery-layout">
-          <img src = "./img/theletter.jpeg" alt = "photo#" style = "grid-row-end:span 30"/>
-          <img src = "./img/gift1.jpeg" alt = "photo#" style = "grid-row-end:span 15"/>
-          <img src = "./img/gift2.jpeg" alt = "photo#" style = "grid-row-end:span 15"/>
+      <section class = "card card--layout card--gallery-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
         </div>
-        <h2 class = "card__heading">This is the heading</h2>
-        <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
-          find by clicking on read more. Any recomendation let us know.</p>
+        <article class = "gallery-layout-category">
+          <div class = "gallery-layout">
+            <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/theletter.jpeg" alt = "photo#" style = "grid-row-end:span 40"/>
+            <img class = "img-border-top img-border-right" src = "./img/gift1.jpeg" alt = "photo#" style = "grid-row-end:span 20"/>
+            <img class = "img-border-top img-border-right img-border-bottom" src = "./img/gift2.jpeg" alt = "photo#" style = "grid-row-end:span 20"/>
+          </div>
+          <h2 class = "card__heading">This is the heading</h2>
+          <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
+            find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
 <!--SECTION-->
-      <section class = "card card--layout card--img-background-layout-category">
-        <div class = "card--img-background-layout">
-          <img src = "./img/steps.jpeg" alt = "photo#" />
-          <div class = "card--img-background-container-layout not-count">
+      <section class = "card card--layout card--img-background-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
+        </div>
+        <article class = "img-background-layout-category">
+          <div class = "img-background-layout">
+            <img src = "./img/steps.jpeg" alt = "photo#" />
+          </div>
+          <div class = "img-background-container-layout not-count">
             <h2 class = "card__heading card__heading--img-background-layout">la cosa piu importante della vita 'e tu le amore mio..</h2>
           </div>
-        </div>
+        </article>
       </section>
 
       <!--SECTIONS-->
-      <section class = "card card--layout card--wider-img-layout-category">
-        <div class = "card--wider-img-layout">
+      <section class = "card card--layout card--wider-img-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
+        </div>
+        <article class = "wider-img-layout-category">
+        <div class = "wider-img-layout">
           <img src = "./img/elefanti.jpeg" alt = "photo#" />
         </div>
         <h2 class = "card__heading">This is the heading</h2>
         <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
               find by clicking on read more. Any recomendation let us know.</p>
+        </article>
       </section>
   <!--SECTION2-->
-      <section class = "card card--layout card__img-to-the-right-layout-category">
-        <div class = "card__img-to-the-right-layout">
+      <section class = "card card--layout card--img-to-the-right-layout card--hover">
+        <div class = "card__metainfo">
+          <ul class = "card__metainfo__list">
+            <li><a href = "#">Category</a></li>
+            <li><a href = "#">Author</a></li>
+            <li><a href = "#">MM/DD/YY</a></li>
+          </ul>
+        </div>
+        <article class = "img-to-the-right-layout-category">
+        <div class = "img-to-the-right-layout">
           <img src = "./img/boots.jpeg" alt = "photo#" />
         </div>
         <h2 class = "card__heading">This is the heading</h2>
@@ -262,18 +422,36 @@
           find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
             find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
               find by clicking on read more. Any recomendation let us know.</p>
+            </article>
       </section>
-          <section class = "card card--layout card--quote-layout-category">
-            <div class = "card--quote-layout">
-              <img src = "#" alt = "photo#" />
+          <section class = "card card--layout card--quote-layout card--hover">
+            <div class = "card__metainfo">
+              <ul class = "card__metainfo__list">
+                <li><a href = "#">Category</a></li>
+                <li><a href = "#">Author</a></li>
+                <li><a href = "#">MM/DD/YY</a></li>
+              </ul>
+            </div>
+            <article class = "quote-layout-category">
+            <div class = "quote-layout">
+              <img  alt = "photo#" />
             </div>
             <h2 class = "card__heading card__heading--quote">la cosa piu importante della vita 'e tu le amore mio..</h2>
             <p class = "card__pag ">This is a small summary of the whole article that you can
               find by clicking on read more. Any recomendation let us know.</p>
+            </article>
           </section>
   <!--SECTION-->
-          <section class = "card card--layout card__img-to-the-left-layout-category">
-            <div class = "card__img-to-the-left-layout">
+          <section class = "card card--layout card--img-to-the-left-layout card--hover">
+            <div class = "card__metainfo">
+              <ul class = "card__metainfo__list">
+                <li><a href = "#">Category</a></li>
+                <li><a href = "#">Author</a></li>
+                <li><a href = "#">MM/DD/YY</a></li>
+              </ul>
+            </div>
+            <article class = "img-to-the-left-layout-category">
+            <div class = "img-to-the-left-layout">
               <img src = "./img/ladonna.jpeg" alt = "photo#" />
             </div>
             <h2 class = "card__heading">This is the heading</h2>
@@ -281,9 +459,18 @@
               find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
                 find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
                   find by clicking on read more. Any recomendation let us know.</p>
+                </article>
           </section>
-          <section class = "card card--layout card__img-to-the-right-layout-category">
-            <div class = "card__img-to-the-right-layout">
+          <section class = "card card--layout card--img-to-the-right-layout card--hover">
+            <div class = "card__metainfo">
+              <ul class = "card__metainfo__list">
+                <li><a href = "#">Category</a></li>
+                <li><a href = "#">Author</a></li>
+                <li><a href = "#">MM/DD/YY</a></li>
+              </ul>
+            </div>
+            <article class = "img-to-the-right-layout-category">
+            <div class = "img-to-the-right-layout">
               <img src = "./img/cavallo.jpeg" alt = "photo#" />
             </div>
             <h2 class = "card__heading">This is the heading</h2>
@@ -292,15 +479,25 @@
                 find by clicking on read more. Any recomendation let us know; article that you can
                   find by clicking on read more. Any recomendation let us know.This is a small summary of the whole article that you can
                     find by clicking on read more. Any recomendation let us know.</p>
+                  </article>
           </section>
 
-          <section class = "card card--layout card--large-img-layout-category">
-            <div class = "card--large-img-layout">
+          <section class = "card card--layout card--large-img-layout card--hover">
+            <div class = "card__metainfo">
+              <ul class = "card__metainfo__list">
+                <li><a href = "#">Category</a></li>
+                <li><a href = "#">Author</a></li>
+                <li><a href = "#">MM/DD/YY</a></li>
+              </ul>
+            </div>
+            <article class = "large-img-layout-category">
+            <div class = "large-img-layout">
               <img src = "./img/lei.jpeg" alt = "photo#" />
             </div>
             <h2 class = "card__heading">This is the heading</h2>
             <p class = "card__pag card__pag--grid">This is a small summary of the whole article that you can
               find by clicking on read more. Any recomendation let us know.</p>
+            </article>
           </section>
 
 

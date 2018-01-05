@@ -2,26 +2,31 @@
 //.....CARD__IMG-TO-THE-LEFT-LAYOUT
 //
 
-.card__img-to-the-left-layout{
+.card--img-to-the-left-layout{
     display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.img-to-the-left-layout-category{
+  .img-to-the-left-layout{
     width: 45%;
     float: left;
     margin-right: 10px;
     img{
       width: 100%;
     }
-    &~*{
-      text-align: left;
-    }
-}
-.card__img-to-the-left-layout-category{
+  }
   width: 100%;
   margin-left: -5%;
   margin-right: 0;
   margin-top: 10px;
+  display: block;
   h2{//give it a class in the future
     font-size:em(24,12);
     font-weight: 600;
+    text-align: left;
   }
   p{//give it a class in the future
     /*font-size: em(14);
@@ -31,5 +36,6 @@
     width: 83%;*/
     margin-left:12%;
     margin-right: 7%;
+    text-align: left;
   }
 }

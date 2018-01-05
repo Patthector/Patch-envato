@@ -4,11 +4,20 @@
 
 .card--img-background-layout{
   position: relative;
-  img{
-    width:100%;
-    display: block;
+  width: 85%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+
+
+}
+.img-background-layout-category{
+  .img-background-layout{
+    img{
+      width:100%;
+      display: block;
+    }
   }
-  & div.card--img-background-container-layout{
+  .img-background-container-layout{
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -20,11 +29,4 @@
     height: 100%;
     background:rgba($black,.3);
   }
-
-
-}
-.card--img-background-layout-category{
-  width: 85%;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
 }
