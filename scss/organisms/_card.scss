@@ -3,8 +3,11 @@
 //
 
 .card{
-  //border:2px solid black;
+  border:.1px solid red;
   //border-radius: 0;
   position: relative;
-  display:block;
+  //display:block;
+  article{
+    border:1px solid blue;
+  }
 }

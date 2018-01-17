@@ -11,6 +11,11 @@
 
 }
 .img-background-layout-category{
+  @media(min-width:481px){
+    position: absolute;
+    top: 0;
+    transition: all 1s ease;
+  }
   .img-background-layout{
     img{
       width:100%;

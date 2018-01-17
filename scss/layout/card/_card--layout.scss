@@ -12,5 +12,7 @@
   margin-right: 2.5%;
   padding: 0;
   width: 95%;
-  transition: all 1s ease;
+  @media(min-width:481px){
+    transition: all 1s ease;
+  }
 }

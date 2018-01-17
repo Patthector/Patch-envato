@@ -12,6 +12,15 @@
     @include reset-content(0,0,0,0,20px,0,0,20%);
     li{
       margin-right: 12px;
+      a{
+        padding: 3px 6px;
+        border:1px solid white;
+        border-radius: 3px;
+        &:hover{
+          background-color:yellow;
+          border-color:yellow;
+        }
+      }
     }
   }
 }

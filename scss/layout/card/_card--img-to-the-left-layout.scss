@@ -10,6 +10,12 @@
     margin-bottom: 40px;
 }
 .img-to-the-left-layout-category{
+
+  @media(min-width:481px){
+    position: absolute;
+    top: 0;
+    transition: all 1s ease;
+  }
   .img-to-the-left-layout{
     width: 45%;
     float: left;

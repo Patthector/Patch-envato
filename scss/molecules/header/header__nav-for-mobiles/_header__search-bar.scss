@@ -3,16 +3,23 @@
 //
 
 .header__search-bar{
+  display: none;
+  position: absolute;
+  top:0;
+  left: 0;
   width: 100vw;
   height: 100vh;
-  position: absolute;
+  z-index: 8001;
+  /*
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-end;
   left: 100vw;
-  top:0;
-  z-index: 8001;
-  transition: all .5s ease-out;
+
+  */
+  //transition: all .5s ease-out;
 }

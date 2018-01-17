@@ -7,6 +7,11 @@
 }
 
 .large-img-layout-category{
+  @media(min-width:481px){
+    position: absolute;
+    top: 0;
+    transition: all 1s ease;
+  }
   .large-img-layout{
     width: 100%;
     img{

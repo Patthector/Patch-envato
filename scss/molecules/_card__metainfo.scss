@@ -1,0 +1,36 @@
+//MOLECULES
+//.........CARD__METAINFO
+//
+
+.card__metainfo{
+  position: absolute;
+  display: block;
+  width: 100%;
+  opacity: 0;
+  top:0;
+  transition: all 1s ease;
+  &__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  &__item{
+    font-family: $font-family-heading;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 3px;
+    &--background{
+      background: yellow;
+      margin-right: 6px;
+    }
+    &--span{
+      text-transform: none;
+      font-weight: 100;
+    }
+    &--date a{
+      color:$color-text-weak;
+      font-weight: 100;
+    }
+  }
+}

@@ -19,10 +19,11 @@ $(document).ready(function() {
 
   $("#link-search").click(function(e){
     e.preventDefault();
-    $("#header__search-bar").addClass("header__search-bar--show");
+    console.log("clicking the lupo");
+    $("#header__search-bar").show("slide",{direction:"right"});
 
     $("#header__search-bar__button-exit").click(function(e){
-        $("#header__search-bar").removeClass("header__search-bar--show");
+        $("#header__search-bar").hide("slide",{direction:"right"});
     });
   });
 
@@ -70,7 +71,7 @@ $(document).ready(function() {
       //height += 10 + 12;
     }
     if(i>0){//NON FOR THE HEADER
-    height +=12;
+    height +=12+40;//40 is margin bottom
     }
 
     let repetitions = Math.ceil(height / 10);/*10px*/

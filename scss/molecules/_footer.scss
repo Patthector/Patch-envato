@@ -1,0 +1,19 @@
+//MOLECULES
+//.........FOOTER.SCSS
+//
+
+.footer{
+  background: $black;
+  &__list{
+    padding: 12px 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    &__items a{
+      color:yellow;
+      font-size:12px;
+    }
+  }
+}

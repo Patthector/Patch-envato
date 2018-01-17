@@ -10,6 +10,11 @@
     margin-bottom:20px;
 }
 .img-to-the-right-layout-category{
+  @media(min-width:481px){
+    position: absolute;
+    top: 0;
+    transition: all 1s ease;
+  }
   .img-to-the-right-layout{
     width: 45%;
     float: right;

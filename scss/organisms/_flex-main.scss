@@ -1,11 +1,10 @@
 //ORGANISMS
 //.........FLEX-MAIN
 //
-main{
-  .flex-main{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
+
+.flex-main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
