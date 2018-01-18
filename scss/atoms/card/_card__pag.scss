@@ -9,8 +9,15 @@
   margin-left: 6.5%;
   margin-right: 6.5%;
   padding: 0;
-  color:$color-text;
-  font-size: em(14);
-  letter-spacing: .5px;
+  font-size: em(13);
+  //letter-spacing: .5px;
   line-height: em(20,14);
+  &--wider-layout{
+    margin-left:10.5%;
+    margin-right:10.5%;
+  }
+  &--large-layout{
+    margin-left:0;
+    margin-right:0;
+  }
 }

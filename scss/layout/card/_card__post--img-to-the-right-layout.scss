@@ -2,33 +2,17 @@
 //.....CARD__IMG-TO-THE-RIGHT-LAYOUT
 //
 
-.card--img-to-the-right-layout{
-    display: block;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    margin-bottom:20px;
-}
-.img-to-the-right-layout-category{
+.card__post--img-to-the-right-layout{
+  width: 100%;
+
   @media(min-width:481px){
     position: absolute;
     top: 0;
     transition: all 1s ease;
-  }
-  .img-to-the-right-layout{
-    width: 45%;
-    float: right;
-    margin-left: 10px;
-    img{
-      width: 100%;
-      display: block;
-    }
-  }
-    width: 100%;
-    margin-left: 6%;
+    //
+    width: 106%;
     margin-right: 0;
     display: block;
-    z-index: 1;
     h2{//give it a class in the future
       font-size:em(24,12);
       font-weight: 600;
@@ -43,4 +27,6 @@
       margin-left: 7%;
       text-align: right;
     }
+  }
+
 }

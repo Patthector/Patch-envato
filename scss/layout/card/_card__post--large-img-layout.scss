@@ -1,0 +1,14 @@
+//LAYOUT
+//......CARD--LARGE-IMG-LAYOUT
+//
+
+.card__post--large-img-layout{
+  @media(min-width:481px){
+    position: absolute;
+    top: 0;
+    transition: all 1s ease;
+  }
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}

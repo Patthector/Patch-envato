@@ -1,0 +1,17 @@
+//MOLECULES
+//........CONTAINER-IMG
+//
+
+.container-img{
+  width:100%;
+  &--right{
+    width: 45%;
+    float: right;
+    margin-left: 10px;
+  }
+  &--left{
+    width: 45%;
+    float: left;
+    margin-right: 10px;
+  }
+}

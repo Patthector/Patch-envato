@@ -2,26 +2,17 @@
 //.....CARD__IMG-BACKGROUND
 //
 
-.card--img-background-layout{
-  position: relative;
+.card__post--img-background-layout{
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
-
-
-}
-.img-background-layout-category{
+  position: relative;
   @media(min-width:481px){
     position: absolute;
     top: 0;
     transition: all 1s ease;
   }
-  .img-background-layout{
-    img{
-      width:100%;
-      display: block;
-    }
-  }
+
   .img-background-container-layout{
     position: absolute;
     display: flex;
