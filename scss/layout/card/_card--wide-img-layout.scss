@@ -7,9 +7,14 @@
     width: 100%;
     img{
       width:100%;
+      display: block;
+      z-index: -1;
     }
 }
 .wide-img-layout-category{
+  div{
+    position: relative;
+  }
   @media(min-width:481px){
     position: absolute;
     top: 0;
