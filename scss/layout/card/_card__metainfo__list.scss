@@ -3,12 +3,9 @@
 //
 
 .card__metainfo__list{
-  @media (min-width:481px){
     display: flex;
-    position: absolute;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    //visibility: hidden;
-  }
+
 }

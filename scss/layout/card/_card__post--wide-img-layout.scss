@@ -4,9 +4,9 @@
 
 
 .card__post--wide-img-layout{
-  width: 90%;
-  margin:0 5%;
-  @media(min-width:481px){
+  width: 95%;
+  margin:0 2.5%;
+  @media(min-width:1024px){
     position: absolute;
     top: 0;
     transition: all 1s ease;

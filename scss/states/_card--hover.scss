@@ -3,7 +3,7 @@
 //
 
 .card--hover:hover{
-  @media (min-width:481px){
+  @media (min-width:1024px){
     div.card__metainfo{
       visibility: visible;
       position: absolute;
@@ -16,7 +16,7 @@
       top: 25px;
       left: 0;
       transition: all .6s ease;
-      div span{
+      div .card__span--opaque{
         opacity: .7;
         transition: all 1s ease;
       }
