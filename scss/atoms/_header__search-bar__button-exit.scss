@@ -3,14 +3,15 @@
 //
 
 .header__search-bar__button-exit{
-  margin-right: 24px;//to avoid the scroll bar
-  margin-left: auto;
+  padding-right: 24px;//to avoid the scroll bar
+  width: 100%;
   border: none;
   background:$white;
   color:$black;
-  font-size: em(48);
+  font-size: 48px;
   font-weight: 300;
   font-family: $font-family-heading;
+  text-align: right;
 }
 .form__input{
   border: none;

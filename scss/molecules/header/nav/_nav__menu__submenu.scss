@@ -2,7 +2,8 @@
 //.........NAV__MENU__SUBMENU
 //
 .nav__menu__submenu{
-  @include reset-list;
+  margin:10px 0 0 10px;
+  padding: 0;
   z-index:8000;
   &__item{
     @media (min-width: 481px){

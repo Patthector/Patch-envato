@@ -4,11 +4,12 @@
 
 .header__nav-for-mobiles__item{
   flex:1 50%;
+  font-size:24px;
   &--left{
     text-align: left;
     position: relative;
     left:0px;
-    transition: all 1s ease;
+    transition: all .5s ease;
   }
   &--right{
     text-align:right;

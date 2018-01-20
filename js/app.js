@@ -12,9 +12,17 @@ $(document).ready(function() {
 
   $("#icon-menu").click(function(e){
     e.preventDefault();
-    $("#nav").toggleClass("nav--mobile-show");
-    $("#icon-menu").toggleClass("icon-menu--clicked");
-    $("#icon-search").toggleClass("icon-search--clicked");
+    //$("#nav").toggleClass("nav--mobile-show");
+    //
+    //$("#icon-search").toggleClass("icon-search--clicked");
+    $("#icon-menu").hide("slide",{direction:"left"});
+    $("#nav").toggle("slide",{direction:"left"},500);
+
+  });
+  $("#icon-menu-gosht").click(function(e){
+
+    $("#nav").toggle("slide",{direction:"left"},500);
+    $("#icon-menu").show("slide",{direction:"left"});
   });
 
   $("#link-search").click(function(e){
@@ -26,6 +34,24 @@ $(document).ready(function() {
         $("#header__search-bar").hide("slide",{direction:"right"});
     });
   });
+
+  $("#arrow-to-the-top").click(function(e){
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, 700);
+  });
+  var lastScrollPosition = 0;
+  $( window ).scroll(function(e) {
+    var currentScrollPosition = $(this).scrollTop();
+    if(currentScrollPosition > 100){
+      console.log("scrolling DOWN");
+      $("#header__mobile-bar-menu").css('position','fixed');
+    }
+    else{
+      console.log("scrolling TOP");
+      $("#header__mobile-bar-menu").css('position','relative');
+    }
+    lastScrollPosition = currentScrollPosition;
+});
 
   //
   //THE GRID
