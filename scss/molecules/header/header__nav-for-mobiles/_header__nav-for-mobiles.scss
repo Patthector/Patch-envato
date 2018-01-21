@@ -4,5 +4,7 @@
 
 ul.header__nav-for-mobiles{//this molecule could either be hide or visible
   width:100%;
-  position: relative;
+  //position: fixed;
+  top: 0;
+  left: 0;
 }

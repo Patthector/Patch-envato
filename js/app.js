@@ -42,13 +42,15 @@ $(document).ready(function() {
   var lastScrollPosition = 0;
   $( window ).scroll(function(e) {
     var currentScrollPosition = $(this).scrollTop();
-    if(currentScrollPosition > 100){
-      console.log("scrolling DOWN");
-      $("#header__mobile-bar-menu").css('position','fixed');
+    if(currentScrollPosition > 150){
+        //$("#header").css('position','fixed');
+        //$("#header__main-heading").css('visibility','hidden');
+        //$("#header").css('margin-bottom',53);
     }
     else{
       console.log("scrolling TOP");
-      $("#header__mobile-bar-menu").css('position','relative');
+      //$("#header").css('position','relative');
+      //$("#header").css('margin-top',53);
     }
     lastScrollPosition = currentScrollPosition;
 });

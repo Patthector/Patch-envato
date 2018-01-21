@@ -467,17 +467,19 @@ ul {
   justify-content: space-around; }
 
 h1.header__main-heading {
-  display: block;
+  display: none;
   width: 100%;
   font-family: "Oswald", sans-serif;
   font-size: 4.5em;
   color: #000;
   margin: 0;
   padding: 0;
-  font-weight: 600; }
-  @media (max-width: 480px) {
+  font-weight: 600;
+  text-align: center; }
+  @media (min-width: 481px) {
     h1.header__main-heading {
-      text-align: center; } }
+      text-align: left;
+      display: block; } }
   h1.header__main-heading span {
     display: inline-block;
     position: relative; }
@@ -489,6 +491,12 @@ h1.header__main-heading {
       right: -12px;
       border: 5px solid yellow;
       width: 0px; }
+  h1.header__main-heading--mobile {
+    display: block;
+    margin-top: 53px; }
+    @media (min-width: 481px) {
+      h1.header__main-heading--mobile {
+        display: none; } }
 
 .header__nav-for-mobiles__item {
   flex: 1 50%;
@@ -648,7 +656,8 @@ article span {
 
 ul.header__nav-for-mobiles {
   width: 100%;
-  position: relative; }
+  top: 0;
+  left: 0; }
 
 .header__nav-for-mobiles--layout {
   box-sizing: border-box;
@@ -656,7 +665,7 @@ ul.header__nav-for-mobiles {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  position: relative;
+  position: fixed;
   width: 100%;
   background: #fff;
   box-shadow: 0 1px 2px #cccccc;
@@ -726,7 +735,9 @@ ul.header__nav-for-mobiles {
       flex-direction: column;
       justify-content: center;
       flex-wrap: nowrap;
-      position: relative; } }
+      position: relative; }
+    .nav .nav__icon-menu-container {
+      display: none; } }
 
 ul.nav__menu {
   list-style: none;
@@ -887,6 +898,7 @@ header {
   left: 0;
   width: 100%;
   display: flex;
+  position: fixed;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;

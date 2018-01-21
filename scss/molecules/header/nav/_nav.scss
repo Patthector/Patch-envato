@@ -32,6 +32,7 @@
         display: block;
         float: right;
         text-align: center;
+
       }
       .gosht-link{
         font-size:24px;
@@ -50,6 +51,9 @@
       flex-wrap: nowrap;
       position:relative;
     }
+      .nav__icon-menu-container{
+        display: none;
+      }
   }
 
 }

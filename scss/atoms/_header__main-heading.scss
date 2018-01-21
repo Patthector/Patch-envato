@@ -3,7 +3,7 @@
 //
 
 h1.header__main-heading{
-  display: block;
+  display: none;
   width: 100%;
   font-family: $font-family-heading;
   font-size:em(72);
@@ -11,8 +11,10 @@ h1.header__main-heading{
   margin: 0;
   padding: 0;
   font-weight: 600;
-  @media(max-width:480px){
-    text-align: center;
+  text-align: center;
+  @media(min-width:481px){
+    text-align: left;
+    display: block;
   }
   span{
     display: inline-block;
@@ -27,5 +29,11 @@ h1.header__main-heading{
       width: 0px;
     }
   }
-
+  &--mobile{
+    display: block;    
+    margin-top: 53px;
+    @media(min-width:481px){
+      display: none;
+    }
+  }
 }

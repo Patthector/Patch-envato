@@ -7,12 +7,12 @@ header{
   left: 0;
   width:100%;
   display: flex;
+  position: fixed;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   z-index: 8000;
   @media(min-width: 481px){
     position: relative;
-
   }
 }
