@@ -16,7 +16,7 @@ $(document).ready(function() {
     //
     //$("#icon-search").toggleClass("icon-search--clicked");
     $("#icon-menu").hide("slide",{direction:"left"});
-    $("#nav").toggle("slide",{direction:"left"},500);
+    $("#nav").toggle("slide",{direction:"left"},200);
 
   });
   $("#icon-menu-gosht").click(function(e){

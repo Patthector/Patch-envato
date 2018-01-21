@@ -698,7 +698,7 @@ ul.header__nav-for-mobiles {
     justify-content: center; }
 
 .nav {
-  background: #fff; }
+  background: transparent; }
   @media (max-width: 480px) {
     .nav--mobile-layout {
       display: none;
@@ -712,12 +712,14 @@ ul.header__nav-for-mobiles {
       box-shadow: 2px 0 3px #cccccc;
       z-index: 8000; }
       .nav--mobile-layout .nav__menus-container {
+        background: white;
         display: block;
         width: 80%;
         height: 100vh;
         float: left;
         box-shadow: 1px 0 7px #8080807d; }
       .nav--mobile-layout .nav__icon-menu-container {
+        background: white;
         width: 20%;
         height: 100%;
         display: block;

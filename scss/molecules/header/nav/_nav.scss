@@ -3,7 +3,7 @@
 //
 
 .nav{
-  background: $color-background;
+  background: transparent;
     @media(max-width:480px){
       &--mobile-layout{
       display: none;
@@ -20,6 +20,7 @@
       z-index:8000;
 
       .nav__menus-container{
+        background: white;
         display: block;
         width: 80%;
         height: 100vh;
@@ -27,6 +28,7 @@
         box-shadow: 1px 0 7px #8080807d;
       }
       .nav__icon-menu-container{
+        background: white;
         width: 20%;
         height: 100%;
         display: block;
