@@ -39,18 +39,21 @@ $(document).ready(function() {
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, 700);
   });
+
   var lastScrollPosition = 0;
   $( window ).scroll(function(e) {
     var currentScrollPosition = $(this).scrollTop();
-    if(currentScrollPosition > 150){
-        //$("#header").css('position','fixed');
-        //$("#header__main-heading").css('visibility','hidden');
-        //$("#header").css('margin-bottom',53);
+    if(currentScrollPosition > lastScrollPosition){
+        if(currentScrollPosition<100){
+          var newPosition = currentScrollPosition - 100;
+          $(".logo").css("transform","translateY("+newPosition+"px)");
+        }
     }
     else{
-      console.log("scrolling TOP");
-      //$("#header").css('position','relative');
-      //$("#header").css('margin-top',53);
+      if(currentScrollPosition<100){
+        var newPosition = currentScrollPosition - 100;
+        $(".logo").css("transform","translateY("+newPosition+"px)");
+      }
     }
     lastScrollPosition = currentScrollPosition;
 });
