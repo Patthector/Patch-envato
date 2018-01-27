@@ -1,0 +1,22 @@
+//ATOMS
+//.....FOOTER__LIST__ITEMS
+//
+
+.footer__list__items{
+  & a{
+    color:white;
+    font-size:12px;
+  }
+  &--arrow a{
+    color:yellow;
+    font-size: 15px;
+  }
+  &--primary{
+    color:rgba(yellow,.9);
+    font-style: normal;
+    font-size: 13px;
+  }
+  &--secondary{
+    color:rgba(yellow,.7);
+  }
+}

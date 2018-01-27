@@ -12,9 +12,6 @@ $(document).ready(function() {
 
   $("#icon-menu").click(function(e){
     e.preventDefault();
-    //$("#nav").toggleClass("nav--mobile-show");
-    //
-    //$("#icon-search").toggleClass("icon-search--clicked");
     $("#icon-menu").hide("slide",{direction:"left"});
     $("#nav").toggle("slide",{direction:"left"},200);
 
@@ -43,21 +40,23 @@ $(document).ready(function() {
   var lastScrollPosition = 0;
   $( window ).scroll(function(e) {
     var currentScrollPosition = $(this).scrollTop();
-    if(currentScrollPosition > lastScrollPosition){
+    if(currentScrollPosition > lastScrollPosition){ //BOTTOM
         if(currentScrollPosition<100){
           var newPosition = currentScrollPosition - 100;
           $(".logo").css("transform","translateY("+newPosition+"px)");
         }
+        else{
+          $(".logo").css("transform","translateY(0px)");
+        }
     }
-    else{
-      if(currentScrollPosition<100){
+    else{ //TOP
+      if(currentScrollPosition < 100){
         var newPosition = currentScrollPosition - 100;
         $(".logo").css("transform","translateY("+newPosition+"px)");
       }
     }
     lastScrollPosition = currentScrollPosition;
 });
-
   //
   //THE GRID
   //
@@ -65,7 +64,7 @@ $(document).ready(function() {
     let grid = $("#main");
     let children = grid.children();
     for (let i = 0; i < children.length; i++) {
-      ///SETTING ALL THE HEIGHTS OF THE CARDS
+      ///SETTING THE HEIGHTS OF ALL THE CARDS
       if(i==0){//if is the header
         BuildingCard(children.eq(i),i);
       }
@@ -119,12 +118,11 @@ $(document).ready(function() {
         //if the child/div is a "card__img-to-the-left-layout" DONT COUNT IT
         continue;
       }
-
-      else if(array.eq(i).hasClass("card__img-to-the-left-layout") || array.eq(i).hasClass("card__img-to-the-right-layout"))
+      else if(array.eq(i).hasClass("container-img--left")
+           || array.eq(i).hasClass("container-img--right"))
       {
         floatImgHeight += array.eq(i).height();
       }
-
       else{
         contentHeight += array.eq(i).height();
       }

@@ -537,7 +537,7 @@ h1.header__main-heading {
   border: none;
   background: #fff;
   color: #000;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 300;
   font-family: "Oswald", sans-serif;
   text-align: right; }
@@ -675,6 +675,19 @@ article span {
     font-size: 24px;
     font-family: "Oswald", sans-serif;
     letter-spacing: 1px; }
+
+.footer__list__items a {
+  color: white;
+  font-size: 12px; }
+.footer__list__items--arrow a {
+  color: yellow;
+  font-size: 15px; }
+.footer__list__items--primary {
+  color: rgba(255, 255, 0, 0.9);
+  font-style: normal;
+  font-size: 13px; }
+.footer__list__items--secondary {
+  color: rgba(255, 255, 0, 0.7); }
 
 ul.header__nav-for-mobiles {
   width: 100%;
@@ -836,6 +849,18 @@ ul.nav__menu {
         background-color: yellow;
         border-color: yellow; }
 
+.nav__menu--description {
+  font-size: 11px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: 50px 5px 5px 5px; }
+  .nav__menu--description i {
+    text-decoration: underline;
+    color: black; }
+  @media (min-width: 480px) {
+    .nav__menu--description {
+      display: none; } }
+
 .card__metainfo {
   display: block;
   width: 100%; }
@@ -891,9 +916,6 @@ ul.nav__menu {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between; }
-    .footer__list__items a {
-      color: yellow;
-      font-size: 12px; }
 
 .flex-main {
   display: flex;

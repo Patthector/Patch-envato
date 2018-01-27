@@ -1,0 +1,17 @@
+//ATOMS
+//.....NAV__MENU--DESCRIPTION
+//
+
+.nav__menu--description{
+  font-size: 11px;
+  color: rgba(black,.7);
+  text-align: center;
+  margin: 50px 5px 5px 5px;
+  i{
+    text-decoration: underline;
+    color: black;
+  }
+  @media(min-width:480px){
+    display: none;
+  }
+}
