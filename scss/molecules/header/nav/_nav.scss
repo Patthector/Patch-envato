@@ -21,7 +21,10 @@
 
       .nav__menus-container{
         background: white;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
         width: 80%;
         height: 100vh;
         float: left;

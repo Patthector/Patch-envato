@@ -11,7 +11,7 @@
   margin-left: 6.5%;
   margin-right:6.5%;
   font-size:em(20,12);
-  font-weight: 300;
+  font-weight: $font-weight-light;
   &--wider-layout{
     margin-left:10.5%;
     margin-right:10.5%;
@@ -21,10 +21,10 @@
     margin-right:0;
   }
   &--bold{
-    font-weight: 400;
+    font-weight: $font-weight-reg;
   }
   &--bolder{
-    font-weight: 600;
+    font-weight: $font-weight-bold;
   }
   &--to-the-right{
     text-align: right;

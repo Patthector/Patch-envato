@@ -4,7 +4,7 @@
 
 .footer__list__items{
   & a{
-    color:white;
+    color:$color-text-weak;
     font-size:12px;
   }
   &--arrow a{
@@ -12,7 +12,7 @@
     font-size: 15px;
   }
   &--primary{
-    color:rgba(yellow,.9);
+    color:$color-secondary;
     font-style: normal;
     font-size: 13px;
   }

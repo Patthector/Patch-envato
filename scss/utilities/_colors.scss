@@ -26,7 +26,7 @@ $palette : (
 // =============
 
 $white:                     #fff;
-$midnight-blue:             #036;
+$yellow:                    #ffff00d9;
 $black:                     #000;
 // Common colors
 //============
@@ -41,16 +41,16 @@ $color-text-strong-invert:  $color-background;
 
 // main color palette
 // =============
-$color-primary:             #000;
-$color-secondary:           #ffff00d9;
-$color-accent:              $black;
+$color-primary:             $black;
+$color-secondary:           $yellow;
+$color-terciary:            $white;
 $color-shadow:              rgba($black, .125);
 $color-note:                #666;
 
 // Links
 $color-link:                $color-primary;
 $color-link-hover:          $color-secondary;
-$color-link-visited:        $midnight-blue;
+$color-link-visited:        $yellow;
 
 //Icons
 //====

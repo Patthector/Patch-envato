@@ -76,22 +76,23 @@ $(document).ready(function() {
 
   function BuildingCard(card,o=-1){
     let array;
-    if(o==0){
+    let height = 0;
+    if(o==0){//it is the header
       array = card.children();
+      height +=20;
     }
     else{
       array = card.children().eq(1);//just the children of article
     }
-    let height = 0;
     for (var i = 0; i < array.length; i++) {
       if(array.eq(i).css("display") === "none" || array.eq(i).hasClass("not-count")){
         //if the child/div is a "card__img-to-the-left-layout" DONT COUNT IT
         continue;
       }
-      else if(array.eq(i).hasClass("card__img-to-the-left-layout") || array.eq(i).hasClass("card__img-to-the-right-layout")){
-        height = FloatingLayouts(card);
+      else if(array.eq(i).hasClass("card__post--img-to-the-left-layout") || array.eq(i).hasClass("card__post--img-to-the-right-layout")){
         console.log("Inside floating layout");
-        console.log(height);
+        height = FloatingLayouts(array.eq(i));
+        console.log("Total height:",height);
         break;
       }
       else{
@@ -100,8 +101,10 @@ $(document).ready(function() {
       //ADD THE MARGIN&&PADDING OF PARAGRAPHs,DIVs,HEADINGs
       //height += 10 + 12;
     }
-    if(i>0){//NON FOR THE HEADER
-    height +=12+40;//40 is margin bottom
+    if(o<0){//NON FOR THE HEADER
+    height +=12+40+15;//15 is margin bottom
+                      /*40 is the height of metainfo
+                      /*12 is the margin of the text (headings and paragraphs)*/
     }
 
     let repetitions = Math.ceil(height / 10);/*10px*/
@@ -125,6 +128,7 @@ $(document).ready(function() {
       }
       else{
         contentHeight += array.eq(i).height();
+        console.log(contentHeight);
       }
     }
     return Math.max(floatImgHeight,contentHeight);
