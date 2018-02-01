@@ -8,8 +8,8 @@
   border: none;
   background:$white;
   color:$black;
-  font-size: 36px;
-  font-weight: 300;
+  font-size: rem(28,12);
+  font-weight: 200;
   font-family: $font-family-heading;
   text-align: right;
 }
@@ -18,8 +18,8 @@
   width: 100%;
   display: inline-block;
   font-family: $font-family-heading;
-  font-size: em(60);
-  font-weight: 100;
+  font-size: rem(48,12);
+  font-weight: 200;
   &::placeholder{
     color:$black;
   }
@@ -27,12 +27,10 @@
 .form{
   margin:auto 1em;
   margin-right: 36px;
-  padding-bottom: em(184);
 }
 .form__input-search-label{
   display: inline-block;
   color:$color-text;
   font-family: $font-family-default;
   letter-spacing: .5px;
-  margin-top: em(12);
 }

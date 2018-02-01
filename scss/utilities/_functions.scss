@@ -24,7 +24,7 @@
 // @returns   - number
 // @source    - http://www.pjmccormick.com/sweet-sass-function-convert-px-em
 
-@function em($target, $context: $base-font-size) {
+@function rem($target, $context: $base-font-size) {
   @if not unitless($target) {
     $target: strip-units($target);
   }
@@ -32,7 +32,7 @@
     $context: strip-units($context);
   }
   @if $target == 0 { @return 0 }
-  @return $target / $context + 0em;
+  @return $target / $context + 0rem;
 }
 // rem()
 //

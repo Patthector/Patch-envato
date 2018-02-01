@@ -10,7 +10,7 @@
   margin: 0;
   margin-left: 6.5%;
   margin-right:6.5%;
-  font-size:em(20,12);
+  font-size:rem(20,12);
   font-weight: $font-weight-light;
   &--wider-layout{
     margin-left:10.5%;
@@ -22,14 +22,18 @@
   }
   &--bold{
     font-weight: $font-weight-reg;
+    font-size: rem(18,12);
   }
   &--bolder{
-    font-weight: $font-weight-bold;
+    font-weight: 700;
+    font-size: rem(16,12);
   }
   &--to-the-right{
     text-align: right;
+    font-size: rem(16,12);
   }
   &--to-the-left{
     text-align: left;
+    font-size: rem(16,12);
   }
 }

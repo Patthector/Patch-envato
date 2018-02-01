@@ -8,36 +8,31 @@
       &--mobile-layout{
       display: none;
       position:absolute;
-      overflow:auto;
       top:0;
-      //left:-500px;
       left: 0;
       width:100%;
       min-height: 100vh;
-      max-height: 100vh;
-      //transition: all 1.5s ease;
       box-shadow: 2px 0 3px $color-background-shade;
       z-index:8000;
-
       .nav__menus-container{
-        background: white;
+        overflow-y: auto;
+        background: $color-background;
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex: 1 100%;
         justify-content: flex-start;
         width: 80%;
-        height: 100vh;
+        //height:100vh;//check if in phones works fine
         float: left;
         box-shadow: 1px 0 7px #8080807d;
       }
       .nav__icon-menu-container{
         background: white;
         width: 20%;
-        height: 100%;
         display: block;
         float: right;
         text-align: center;
-
       }
       .gosht-link{
         font-size:24px;

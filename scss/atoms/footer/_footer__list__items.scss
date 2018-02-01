@@ -5,16 +5,16 @@
 .footer__list__items{
   & a{
     color:$color-text-weak;
-    font-size:12px;
+    font-size:rem(10,12);
   }
   &--arrow a{
     color:yellow;
-    font-size: 15px;
+    font-size: rem(12,12);
   }
   &--primary{
     color:$color-secondary;
     font-style: normal;
-    font-size: 13px;
+    font-size: rem(9,12);
   }
   &--secondary{
     color:rgba(yellow,.7);

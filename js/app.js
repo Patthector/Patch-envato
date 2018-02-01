@@ -17,14 +17,13 @@ $(document).ready(function() {
 
   });
   $("#icon-menu-gosht").click(function(e){
-
+    e.preventDefault();
     $("#nav").toggle("slide",{direction:"left"},500);
     $("#icon-menu").show("slide",{direction:"left"});
   });
 
   $("#link-search").click(function(e){
     e.preventDefault();
-    console.log("clicking the lupo");
     $("#header__search-bar").show("slide",{direction:"right"});
 
     $("#header__search-bar__button-exit").click(function(e){
@@ -50,8 +49,8 @@ $(document).ready(function() {
         }
     }
     else{ //TOP
-      if(currentScrollPosition < 100){
-        var newPosition = currentScrollPosition - 100;
+      if(currentScrollPosition < 106){
+        var newPosition = currentScrollPosition - 106;
         $(".logo").css("transform","translateY("+newPosition+"px)");
       }
     }
@@ -79,7 +78,7 @@ $(document).ready(function() {
     let height = 0;
     if(o==0){//it is the header
       array = card.children();
-      height +=20;
+      height +=20+60;
     }
     else{
       array = card.children().eq(1);//just the children of article

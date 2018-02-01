@@ -1,9 +1,28 @@
-//MOLECULES
-//.........HEADER__NAV-FOR-MOBILES
+//LAYOUT
+//......HEADER__NAV-FOR-MOBILES--LAYOUT
 //
 
-ul.header__nav-for-mobiles{//this molecule could either be hide or visible
-  width:100%;
+.header__nav-for-mobiles{
+  box-sizing: border-box;
+  //FLEX
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  //...
+  position: fixed;
   top: 0;
   left: 0;
+  width:100%;
+  background: $color-background;
+  //BOX-SHADOW
+  box-shadow: 0 1px 2px $color-background-shade;
+  @include reset-list;
+  padding:10px;
+  z-index: 8000;
+  //...
+  @media (min-width:481px){//it's hidden
+    display: none;
+  }
+
 }
