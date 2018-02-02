@@ -7,4 +7,16 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  @media(min-width:481px){
+    width: 80%;
+    margin: 0 10%;
+  }
+  @media(min-width:580px){
+    width: 70%;
+    margin: 0 15%;
+  }
+  @media(min-width:620px){
+    width: 60%;
+    margin: 0 20%;
+  }
 }

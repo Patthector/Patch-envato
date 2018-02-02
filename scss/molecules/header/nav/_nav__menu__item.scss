@@ -4,7 +4,7 @@
 .nav__menu__item{
   position: relative;
   &:hover>.nav__menu__submenu {
-    @media(min-width:481px){
+    @media(min-width:661px){
       display: block;
       position: absolute;
       top: 0;

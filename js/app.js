@@ -135,6 +135,18 @@ $(document).ready(function() {
   //
   //END OF THE GRID
   //
-  CreatingTheGrid();
+  //CreatingTheGrid();
+  $(window).on('load',function(){
+    console.log("LOADING");
+    CreatingTheGrid();
+  })
+  $(window).on('resize',function(){
+    console.log("RESIZING");
+    CreatingTheGrid();
+  })
+  $(window).on('orientationchange',function(){
+    console.log("ORIENTATIONCHANGE");
+    CreatingTheGrid();
+  })
 
 });

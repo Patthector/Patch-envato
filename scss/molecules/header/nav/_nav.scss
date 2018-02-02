@@ -4,7 +4,7 @@
 
 .nav{
   background: transparent;
-    @media(max-width:480px){
+    @media(max-width:660px ){
       &--mobile-layout{
       display: none;
       position:absolute;
@@ -43,14 +43,7 @@
       }
     }
   }
-    @media(min-width:481px){
-      &--big-screen-layout{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-wrap: nowrap;
-      position:relative;
-    }
+    @media(min-width:661px){
       .nav__icon-menu-container{
         display: none;
       }

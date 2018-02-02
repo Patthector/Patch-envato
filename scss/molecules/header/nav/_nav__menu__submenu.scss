@@ -6,7 +6,7 @@
   padding: 0;
   z-index:8000;
   &__item{
-    @media (min-width: 481px){
+    @media (min-width:661px){
       & li{
         font-size: 12px;
       }

@@ -453,7 +453,7 @@ h1.header__main-heading {
   padding: 0;
   font-weight: 600;
   text-align: center; }
-  @media (min-width: 481px) {
+  @media (min-width: 661px) {
     h1.header__main-heading {
       text-align: left;
       display: block; } }
@@ -471,7 +471,7 @@ h1.header__main-heading {
   h1.header__main-heading--mobile {
     display: block;
     margin-top: 73px; }
-    @media (min-width: 481px) {
+    @media (min-width: 661px) {
       h1.header__main-heading--mobile {
         display: none; } }
 
@@ -687,7 +687,7 @@ article span {
   padding: 0;
   padding: 10px;
   z-index: 8000; }
-  @media (min-width: 481px) {
+  @media (min-width: 661px) {
     .header__nav-for-mobiles {
       display: none; } }
 
@@ -710,7 +710,7 @@ article span {
 
 .nav {
   background: transparent; }
-  @media (max-width: 480px) {
+  @media (max-width: 660px) {
     .nav--mobile-layout {
       display: none;
       position: absolute;
@@ -743,13 +743,7 @@ article span {
         width: 100%;
         display: block;
         padding: 12px 0; } }
-  @media (min-width: 481px) {
-    .nav--big-screen-layout {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-wrap: nowrap;
-      position: relative; }
+  @media (min-width: 661px) {
     .nav .nav__icon-menu-container {
       display: none; } }
 
@@ -764,7 +758,7 @@ ul.nav__menu {
     align-items: flex-start;
     width: 90%;
     margin: 20px; }
-  @media (min-width: 481px) {
+  @media (min-width: 661px) {
     ul.nav__menu--big-screens-layout {
       flex-direction: row;
       flex-wrap: wrap;
@@ -778,7 +772,7 @@ ul.nav__menu {
 
 .nav__menu__item {
   position: relative; }
-  @media (min-width: 481px) {
+  @media (min-width: 661px) {
     .nav__menu__item:hover > .nav__menu__submenu {
       display: block;
       position: absolute;
@@ -796,7 +790,7 @@ ul.nav__menu {
   margin: 10px 0 0 10px;
   padding: 0;
   z-index: 8000; }
-  @media (min-width: 481px) {
+  @media (min-width: 661px) {
     .nav__menu__submenu__item li {
       font-size: 12px; } }
 
@@ -835,7 +829,7 @@ ul.nav__menu {
   .nav__menu--description i {
     text-decoration: underline;
     color: black; }
-  @media (min-width: 480px) {
+  @media (min-width: 661px) {
     .nav__menu--description {
       display: none; } }
 
@@ -900,8 +894,20 @@ ul.nav__menu {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center; }
+  @media (min-width: 481px) {
+    .flex-main {
+      width: 80%;
+      margin: 0 10%; } }
+  @media (min-width: 580px) {
+    .flex-main {
+      width: 70%;
+      margin: 0 15%; } }
+  @media (min-width: 620px) {
+    .flex-main {
+      width: 60%;
+      margin: 0 20%; } }
 
-@media (min-width: 481px) {
+@media (min-width: 661px) {
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
@@ -910,7 +916,7 @@ ul.nav__menu {
     width: 90%;
     margin: 20px 5%;
     grid-column-gap: 1%; } }
-@media (min-width: 1024px) {
+@media (min-width: 1050px) {
   .grid {
     grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)); } }
 @media (min-width: 2048px) {
@@ -927,7 +933,7 @@ header {
   flex-wrap: nowrap;
   justify-content: center;
   z-index: 8000; }
-  @media (min-width: 481px) {
+  @media (min-width: 661px) {
     header {
       position: relative;
       margin-bottom: 20px;
@@ -1038,6 +1044,6 @@ header {
 @font-face {
   font-family: "Oswald";
   font-weight: 700;
-  src: url("../fonts/Oswald-Bold.ttf") format("truetype"), url("../fonts/oswald-heavy-webfont.woff") format("woff"), url("../fonts/oswald-heavy-webfont.woff2") format("woff2"); }
+  src: url("../fonts/Oswald-Heavy.ttf") format("truetype"), url("../fonts/oswald-heavy-webfont.woff") format("woff"), url("../fonts/oswald-heavy-webfont.woff2") format("woff2"); }
 
 /*# sourceMappingURL=styles.css.map */
