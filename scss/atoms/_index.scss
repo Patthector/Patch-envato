@@ -8,18 +8,11 @@
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
 
+
+//HEADER/INDEX
+@import "./header/index.scss";
 //HEADER__MAIN-HEADING
 @import "./header__main-heading.scss";
-//HEADER__NAV-FOR-MOBILES__ITEMS
-@import "./header__nav-for-mobiles__items.scss";
-//HEADER__SEARCH-BAR--BUTTON-EXIT
-@import "./header__search-bar__button-exit.scss";
-//LINK
-@import "./link.scss";
-//NAV__MENU__ITEM
-@import "./nav__menu__item.scss";
-//NAV__MENU__ITEM--FONT-STYLES
-@import "./nav__link--styles.scss";
 //CARD
 @import "./card/index.scss";
 //FOOTER__LIST__ITEMS

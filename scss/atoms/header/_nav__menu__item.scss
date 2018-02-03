@@ -1,9 +1,12 @@
-//MOLECULES
-//.........NAV__MENU__ITEM
+//ATOMS
+//.....NAV__MENU__ITEMS
 //
+
 .nav__menu__item{
+  margin: 0;
+  padding-bottom: 4px;
   position: relative;
-  &:hover>.nav__menu__submenu {
+  &:hover>.submenu {
     @media(min-width:661px){
       display: block;
       position: absolute;

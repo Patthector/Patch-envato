@@ -59,10 +59,10 @@
     <main id = "main" class = "flex-main grid">
 <!--HEADER-->
       <header id = "header" class = "header">
-        <ul  class = "header__nav-for-mobiles not-count">
-          <li id = "icon-menu" class = "header__nav-for-mobiles__item header__nav-for-mobiles__item--left"><a  class = "link" href = "#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+        <ul  class = "header__mobile-navbar not-count">
+          <li id = "icon-menu" class = "header__mobile-navbar__item header__mobile-navbar__item--left"><a  class = "link" href = "#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
           <li><h1 class = " logo">PATC<span>H</span></h1></li>
-          <li id = "icon-search" class = "header__nav-for-mobiles__item header__nav-for-mobiles__item--right"><a id = "link-search" class = "link" href = "#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+          <li id = "icon-search" class = "header__mobile-navbar__item header__mobile-navbar__item--right"><a id = "link-search" class = "link" href = "#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
         </ul>
         <div id = "header__search-bar" class = "header__search-bar header__search-bar--styles not-count">
           <button id = "header__search-bar__button-exit" class = "header__search-bar__button-exit">X</button>
@@ -74,33 +74,33 @@
 <!--H1-->
         <h1 id = "header__main-heading" class = "header__main-heading">PATC<span>H</span></h1>
 <!--NAV-->
-        <nav id = "nav" class = "nav nav--mobile-layout nav--big-screen-layout">
-          <div class = "nav__menus-container">
-          <ul class = "nav__menu nav__menu--layout nav__menu--big-screens-layout">
-            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Home</a></li>
-            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Gallery</a></li>
+        <nav id = "nav" class = "nav nav__mobile-menu">
+          <div class = "nav__menus-container mobile-menu__container">
+          <ul class = "nav__menu menu-mobile menu-bigger-devices">
+            <li class = "nav__menu__item"><a class = "menu-link" href = "#">Home</a></li>
+            <li class = "nav__menu__item"><a class = "menu-link" href = "#">Gallery</a></li>
             <li class = "nav__menu__item nav__menu__submenu__item">
-              <a class = "nav__link nav__link--styles" href = "#">Themes+</a>
-              <ul class = "nav__menu__submenu">
-                <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">The BBC theme</a></li>
-                <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Un volo nuovo</a></li>
-                <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Vogue! Other view</a></li>
+              <a class = "menu-link" href = "#">Themes+</a>
+              <ul class = "submenu">
+                <li class = "nav__menu__item"><a class = "menu-link" href = "#">The BBC theme</a></li>
+                <li class = "nav__menu__item"><a class = "menu-link" href = "#">Un volo nuovo</a></li>
+                <li class = "nav__menu__item"><a class = "menu-link" href = "#">Vogue! Other view</a></li>
               </ul>
             </li>
-            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Contact</a></li>
-            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Video</a></li>
-            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">Music</a></li>
-            <li class = "nav__menu__item"><a class = "nav__link nav__link--styles" href = "#">About Us</a></li>
+            <li class = "nav__menu__item"><a class = "menu-link" href = "#">Contact</a></li>
+            <li class = "nav__menu__item"><a class = "menu-link" href = "#">Video</a></li>
+            <li class = "nav__menu__item"><a class = "menu-link" href = "#">Music</a></li>
+            <li class = "nav__menu__item"><a class = "menu-link" href = "#">About Us</a></li>
           </ul>
-          <p class = "not-count nav__menu--description"><span>&reg;All Rights Reserved. Aknowledgement to all the <a href = "#">contributors</a>. Theme made by PaTTor with love.</span><br/>Inspared by <i>Patch Theme</i></p>
-          <ul class = "nav__social-media-menu nav__social-media-menu--layout">
+          <p class = "not-count mobile-menu__description"><span>&reg;All Rights Reserved. Aknowledgement to all the <a href = "#">contributors</a>. Theme made by PaTTor with love.</span><br/>Inspared by <i>Patch Theme</i></p>
+          <ul class = "menu-social-media">
             <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
             <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
             <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
           </ul>
         </div>
-          <div class = "nav__icon-menu-container"><a id = "icon-menu-gosht"  class = "gosht-link" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+          <div class = "mobile-menu__icon-container"><a id = "icon-menu-gosht"  class = "mobile-menu__gosht-icon" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
         </nav>
       </header>
       <h1 class = "header__main-heading header__main-heading--mobile">PATC<span>H</span></h1>
@@ -199,7 +199,7 @@
       <section class = "card card--hover">
         <div class = "card__metainfo">
           <ul class = "card__metainfo__list card__metainfo__list--to-the-right">
-            <li class = "card__metainfo__item card__metainfo__item--background"><a href = "#">Category</a></li>
+            <li class = "card__metainfo__item card__metainfo__item--to-the-right card__metainfo__item--background"><a href = "#">Category</a></li>
             <li class = "card__metainfo__item"><a href = "#"><span class = "card__metainfo__item--span">By </span>Author</a></li>
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
@@ -254,7 +254,7 @@
       <section class = "card card--hover">
         <div class = "card__metainfo">
           <ul class = "card__metainfo__list card__metainfo__list--to-the-left">
-            <li class = "card__metainfo__item card__metainfo__item--background"><a href = "#">Category</a></li>
+            <li class = "card__metainfo__item card__metainfo__item--to-the-left card__metainfo__item--background"><a href = "#">Category</a></li>
             <li class = "card__metainfo__item"><a href = "#"><span class = "card__metainfo__item--span">By </span>Author</a></li>
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
@@ -310,7 +310,7 @@
       <section class = "card card--hover">
         <div class = "card__metainfo">
           <ul class = "card__metainfo__list card__metainfo__list--to-the-right">
-            <li class = "card__metainfo__item card__metainfo__item--background"><a href = "#">Category</a></li>
+            <li class = "card__metainfo__item card__metainfo__item--to-the-right card__metainfo__item--background"><a href = "#">Category</a></li>
             <li class = "card__metainfo__item"><a href = "#"><span class = "card__metainfo__item--span">By </span>Author</a></li>
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
@@ -380,7 +380,7 @@
       <section class = "card card--hover">
         <div class = "card__metainfo">
           <ul class = "card__metainfo__list card__metainfo__list--to-the-right">
-            <li class = "card__metainfo__item card__metainfo__item--background"><a href = "#">Category</a></li>
+            <li class = "card__metainfo__item card__metainfo__item--to-the-right card__metainfo__item--background"><a href = "#">Category</a></li>
             <li class = "card__metainfo__item"><a href = "#"><span class = "card__metainfo__item--span">By </span>Author</a></li>
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
@@ -400,7 +400,7 @@
       <section class = "card card--hover">
         <div class = "card__metainfo">
           <ul class = "card__metainfo__list card__metainfo__list--to-the-right">
-            <li class = "card__metainfo__item card__metainfo__item--background"><a href = "#">Category</a></li>
+            <li class = "card__metainfo__item card__metainfo__item--to-the-right card__metainfo__item--background"><a href = "#">Category</a></li>
             <li class = "card__metainfo__item"><a href = "#"><span class = "card__metainfo__item--span">By </span>Author</a></li>
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
@@ -458,7 +458,7 @@
       <section class = "card card--hover">
         <div class = "card__metainfo">
           <ul class = "card__metainfo__list card__metainfo__list--to-the-right">
-            <li class = "card__metainfo__item card__metainfo__item--background"><a href = "#">Category</a></li>
+            <li class = "card__metainfo__item card__metainfo__item--to-the-right card__metainfo__item--background"><a href = "#">Category</a></li>
             <li class = "card__metainfo__item"><a href = "#"><span class = "card__metainfo__item--span">By </span>Author</a></li>
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
@@ -525,7 +525,7 @@
     <section class = "card card--hover">
       <div class = "card__metainfo">
         <ul class = "card__metainfo__list card__metainfo__list--to-the-left">
-          <li class = "card__metainfo__item card__metainfo__item--background"><a href = "#">Category</a></li>
+          <li class = "card__metainfo__item card__metainfo__item--to-the-left card__metainfo__item--background"><a href = "#">Category</a></li>
           <li class = "card__metainfo__item"><a href = "#"><span class = "card__metainfo__item--span">By </span>Author</a></li>
           <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
         </ul>
@@ -579,7 +579,7 @@
     <section class = "card card--hover">
       <div class = "card__metainfo">
         <ul class = "card__metainfo__list card__metainfo__list--to-the-right">
-          <li class = "card__metainfo__item card__metainfo__item--background"><a href = "#">Category</a></li>
+          <li class = "card__metainfo__item card__metainfo__item--to-the-right card__metainfo__item--background"><a href = "#">Category</a></li>
           <li class = "card__metainfo__item"><a href = "#"><span class = "card__metainfo__item--span">By </span>Author</a></li>
           <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
         </ul>

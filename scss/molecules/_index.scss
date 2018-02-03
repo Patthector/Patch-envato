@@ -9,11 +9,8 @@
 //
 // @source - http://atomicdesign.bradfrost.com/chapter-2/
 
-
-//HEADER__NAV-FOR-MOBILES-INDEX
-@import "./header/header__nav-for-mobiles/index.scss";
-//NAV
-@import "./header/nav/index.scss";
+//HEADER/INDEX
+@import "./header/index.scss";
 //CARD__METAINFO
 @import "./card__metainfo.scss";
 //CONTAINER-IMG

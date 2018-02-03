@@ -1,0 +1,15 @@
+//LAYOUT
+//.......NAV__MOBILE-MENU
+//
+@media(max-width:660px ){
+  .nav__mobile-menu{
+    display: none;
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    min-height: 100vh;
+    box-shadow: 2px 0 3px $color-background-shade;
+    z-index:8000;
+  }
+}

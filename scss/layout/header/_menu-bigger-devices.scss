@@ -1,0 +1,19 @@
+//LAYOUT
+//......MENU-BIGGER-DEVICES
+//
+
+.menu-bigger-devices{
+  @media(min-width:661px){
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index:1;
+    position: relative;
+    width: 60%;
+    max-width: 100%;
+    margin:auto;
+    //temporally
+    li{
+      flex:1 50%;
+    }
+  }
+}

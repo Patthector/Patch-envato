@@ -1,0 +1,16 @@
+//LAYOUT
+//......CONTAINER__MOBILE-MENU
+//
+
+.mobile-menu__container{
+  @media(max-width: 660px){
+    overflow-y: auto;
+  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 100%;
+  justify-content: flex-start;
+  width: 80%;
+  float: left;
+}

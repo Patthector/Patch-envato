@@ -1,0 +1,14 @@
+//LAYOUT
+//......MOBILE-MENU__ICON-CONTAINER
+//
+
+.mobile-menu__icon-container{
+  width: 20%;
+  display: block;
+  float: right;
+  text-align: center;
+  padding: 10px 0;
+  @media(min-width:661px){
+      display: none;
+    }
+}
