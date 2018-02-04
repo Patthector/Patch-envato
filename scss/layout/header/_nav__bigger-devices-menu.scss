@@ -3,5 +3,7 @@
 //
 
 .nav__bigger-devices-menu{
-  
+  @media(min-width:661px){
+    display: block;
+  }
 }

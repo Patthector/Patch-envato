@@ -174,10 +174,18 @@ $(document).ready(function() {
   })
   $(window).on('resize',function(){
     console.log("RESIZING");
+    let main_display = $("main").css("display");
+    if(main_display === "grid"){//if is the grid show the menu
+      $("#nav").css("display","block");
+    }
     CreatingTheGrid();
   })
   $(window).on('orientationchange',function(){
     console.log("ORIENTATIONCHANGE");
+    let main_display = $("main").css("display");
+    if(main_display === "grid"){//if is the grid show the menu
+      $("#nav").css("display","block");
+    }
     CreatingTheGrid();
   })
 

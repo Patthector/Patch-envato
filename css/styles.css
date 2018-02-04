@@ -324,6 +324,10 @@ ul {
     .menu-bigger-devices li {
       flex: 1 50%; } }
 
+@media (min-width: 661px) {
+  .nav__bigger-devices-menu {
+    display: block; } }
+
 .submenu {
   margin: 10px 0 0 10px;
   padding: 0;
