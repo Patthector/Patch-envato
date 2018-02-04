@@ -10,12 +10,21 @@ $(document).ready(function() {
     }
   });
 
-  $("#icon-menu").click(function(e){
+  /*$("#icon-menu").click(function(e){
     e.preventDefault();
     $("#icon-menu").hide("slide",{direction:"left"});
     $("#nav").toggle("slide",{direction:"left"},200);
 
-  });
+  });*/
+  $("#icon-menu").on("swiperight",function(e){
+    e.preventDefault();
+    $("#icon-menu").hide("slide",{direction:"left"});
+    $("#nav").toggle("slide",{direction:"left"},200);
+  })
+
+
+
+
   $("#icon-menu-gosht").click(function(e){
     e.preventDefault();
     $("#nav").toggle("slide",{direction:"left"},500);

@@ -1,0 +1,12 @@
+//ATOMS
+//.....HEADER__MAIN-HEADING--MOBILE
+//
+
+
+.main-heading--mobile{
+  display: block;
+  margin-top: 73px;
+  @media(min-width:661px){
+    display: none;
+  }
+}

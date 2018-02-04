@@ -566,6 +566,40 @@ ul {
   flex-wrap: nowrap;
   justify-content: space-around; }
 
+.main-heading {
+  display: none;
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  text-align: center; }
+  @media (min-width: 661px) {
+    .main-heading {
+      text-align: left;
+      display: block;
+      font-size: 5rem; } }
+  .main-heading span {
+    display: inline-block;
+    position: relative; }
+    .main-heading span:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 75%;
+      right: -12px;
+      border: 5px solid yellow;
+      width: 0px; }
+
+.main-heading--mobile {
+  display: block;
+  margin-top: 73px; }
+  @media (min-width: 661px) {
+    .main-heading--mobile {
+      display: none; } }
+
 .mobile-menu__gosht-icon {
   font-size: 24px;
   background: #00000005; }
@@ -682,38 +716,6 @@ ul {
   bottom: 2px;
   border-bottom: 10px solid yellow;
   z-index: -1000; }
-
-h1.header__main-heading {
-  display: none;
-  width: 100%;
-  font-family: "Oswald", sans-serif;
-  font-size: 5rem;
-  color: #000;
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  text-align: center; }
-  @media (min-width: 661px) {
-    h1.header__main-heading {
-      text-align: left;
-      display: block; } }
-  h1.header__main-heading span {
-    display: inline-block;
-    position: relative; }
-    h1.header__main-heading span:after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 75%;
-      right: -12px;
-      border: 5px solid yellow;
-      width: 0px; }
-  h1.header__main-heading--mobile {
-    display: block;
-    margin-top: 73px; }
-    @media (min-width: 661px) {
-      h1.header__main-heading--mobile {
-        display: none; } }
 
 .card__img {
   width: 100%;
