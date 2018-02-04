@@ -669,12 +669,11 @@ ul {
       width: 0px; }
 
 .header__search-bar__button-exit {
-  padding-right: 24px;
   width: 100%;
   border: none;
   background: #fff;
   color: #000;
-  font-size: 2.3333333333rem;
+  font-size: 2rem;
   font-weight: 200;
   font-family: "Oswald", sans-serif;
   text-align: right; }
@@ -685,7 +684,7 @@ ul {
   display: inline-block;
   font-family: "Oswald", sans-serif;
   font-size: 4rem;
-  font-weight: 200; }
+  font-weight: 700; }
   .form__input::placeholder {
     color: #000; }
 
@@ -697,7 +696,8 @@ ul {
   display: inline-block;
   color: #666666;
   font-family: "Open Sans", sans-serif;
-  letter-spacing: .5px; }
+  letter-spacing: .1px;
+  font-size: 11px; }
 
 .menu-link {
   font-size: 1.3333333333rem;
@@ -996,6 +996,12 @@ header {
     .card--hover:hover article div .card__span--opaque {
       opacity: .7;
       transition: all 1s ease; } }
+
+.ui-loader h1,
+.ui-corner-all h1,
+.ui-body-a h1,
+.ui-loader-default h1 {
+  display: none; }
 
 @media print {
   *:before, *:after {

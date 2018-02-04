@@ -3,12 +3,12 @@
 //
 
 .header__search-bar__button-exit{
-  padding-right: 24px;//to avoid the scroll bar
+  //padding-right: 24px;//to avoid the scroll bar
   width: 100%;
   border: none;
   background:$white;
   color:$black;
-  font-size: rem(28,12);
+  font-size: rem(24,12);
   font-weight: 200;
   font-family: $font-family-heading;
   text-align: right;
@@ -19,7 +19,7 @@
   display: inline-block;
   font-family: $font-family-heading;
   font-size: rem(48,12);
-  font-weight: 200;
+  font-weight: 700;
   &::placeholder{
     color:$black;
   }
@@ -32,5 +32,6 @@
   display: inline-block;
   color:$color-text;
   font-family: $font-family-default;
-  letter-spacing: .5px;
+  letter-spacing: .1px;
+  font-size:11px;
 }
