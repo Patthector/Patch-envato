@@ -9,7 +9,7 @@
   background:$white;
   color:$black;
   font-size: rem(24,12);
-  font-weight: 200;
+  font-weight:700;
   font-family: $font-family-heading;
   text-align: right;
 }
@@ -19,9 +19,10 @@
   display: inline-block;
   font-family: $font-family-heading;
   font-size: rem(48,12);
-  font-weight: 700;
+  font-weight: 200;
   &::placeholder{
     color:$black;
+    font-weight: 700;
   }
 }
 .form{

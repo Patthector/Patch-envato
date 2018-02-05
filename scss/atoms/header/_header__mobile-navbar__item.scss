@@ -5,6 +5,7 @@
 .header__mobile-navbar__item{
   flex:1 50%;
   font-size:rem(18,12);
+  align-self: center;
   &--left{
     text-align: left;
     position: relative;
@@ -18,14 +19,14 @@
 .logo{
   display: block;
   transform: translateY(-100px);
-  font-size: rem(18,12);
+  //font-size: rem(18,12);
   width: 100%;
   font-family: $font-family-heading;
-  color:$black;
+  color:$color-primary;
   margin: 0;
-  margin-top: 6px;
+  //margin-top: 6px;
   padding: 0;
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   span{
     position: relative;
@@ -33,7 +34,7 @@
       content:"";
       display: block;
       position: absolute;
-      top: 75%;
+      top: 70%;
       right:-8px;
       border: 3px solid yellow;
       width: 0px;

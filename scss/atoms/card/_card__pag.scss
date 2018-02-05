@@ -2,6 +2,12 @@
 //......CARD--PAG
 //
 
+/**
+*This is the behaivor of all the paragraphs in different environments(layouts)
+*taking always care of the behaivor of the overlaping post and avoiding
+*compromise content. That's the reason for the margins approach
+*/
+
 .card__pag{
   font-family:$font-family-default;
   color:$color-text;
