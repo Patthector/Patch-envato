@@ -3,7 +3,7 @@
 //
 
 .card--hover:hover{
-  @media (min-width:1024px){
+  @media (min-width:map-get($breakpoints, large)){
     div.card__metainfo{
       visibility: visible;
       position: absolute;

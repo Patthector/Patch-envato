@@ -7,15 +7,15 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  @media(min-width:481px){
+  @media(min-width:map-get($breakpoints, xsmall)){
     width: 80%;
     margin: 0 10%;
   }
-  @media(min-width:580px){
+  @media(min-width:map-get($breakpoints, xsmall)+100px){
     width: 70%;
     margin: 0 15%;
   }
-  @media(min-width:620px){
+  @media(min-width:map-get($breakpoints, small)-40px){
     width: 60%;
     margin: 0 20%;
   }

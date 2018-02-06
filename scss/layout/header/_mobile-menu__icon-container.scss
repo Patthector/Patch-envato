@@ -7,8 +7,8 @@
   display: block;
   float: right;
   text-align: center;
-  padding: 10px 0;
-  @media(min-width:661px){
+  padding: 16px 0;
+  @media(min-width:map-get($breakpoints, small)+1px){
       display: none;
     }
 }

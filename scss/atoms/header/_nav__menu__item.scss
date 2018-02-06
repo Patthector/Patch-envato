@@ -7,7 +7,7 @@
   padding-bottom: 4px;
   position: relative;
   &:hover>.submenu {
-    @media(min-width:661px){
+    @media(min-width:map-get($breakpoints, small)+1px){
       display: block;
       position: absolute;
       top: 0;

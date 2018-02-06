@@ -3,7 +3,7 @@
 //
 
 .menu-bigger-devices{
-  @media(min-width:661px){
+  @media(min-width:map-get($breakpoints, small)+1px){
     flex-direction: row;
     flex-wrap: wrap;
     z-index:1;

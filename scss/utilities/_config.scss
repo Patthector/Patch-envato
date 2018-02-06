@@ -29,14 +29,13 @@ $old-ie:                      false !default;
 // $breakpoints - {map}
 
 $breakpoints: (
-  xsmall:                     null,
-  small:                      480,
-  medium:                     768,
-  large:                      1024,
-  xlarge:                     1280,
+  xsmall:                     480px,
+  small:                      660px,
+  medium:                     null,
+  large:                      1050px,
+  xlarge:                     2048px,
 );
 
-$mq--one-col:660px;
 
 // $zindex
 //

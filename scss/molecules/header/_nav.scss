@@ -8,7 +8,7 @@
 
 .mobile-menu__container{
   background: $color-background;
-  @media(max-width: 660px){
+  @media(max-width: map-get($breakpoints, small)){
     box-shadow: 1px 0 7px #8080807d;
   }
 

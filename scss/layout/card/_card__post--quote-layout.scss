@@ -3,28 +3,14 @@
 //
 
 .card__post--quote-layout{
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 
-  @media(min-width: 1024px){
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  @media(min-width:1024px){
+  @media(min-width:map-get($breakpoints, large)){
     position: absolute;
     top: 0;
     transition: all 1s ease;
-    //
-    //z-index:1;
-    //width: 110%;
-    //margin-left: -5%;
-    /*p{
-      margin-left: 12%;
-      margin-right: 5%;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }*/
   }
 
 }

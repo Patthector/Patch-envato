@@ -3,7 +3,7 @@
 //
 
 .mobile-menu__container{
-  @media(max-width: 660px){
+  @media(max-width:map-get($breakpoints, small)){
     overflow-y: auto;
   }
   display: flex;

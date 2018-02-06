@@ -5,8 +5,8 @@
 
 .main-heading--mobile{
   display: block;
-  margin-top: 73px;
-  @media(min-width:661px){
+  margin-top: 72px;
+  @media(min-width:map-get($breakpoints, small)+1px){
     display: none;
   }
 }

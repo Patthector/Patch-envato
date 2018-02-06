@@ -6,8 +6,7 @@
 
 .card__post--wider-img-layout{
   width: 100%;
-
-  @media(min-width:1024px){
+  @media(min-width:map-get($breakpoints, large)){
     position: absolute;
     top: 0;
     transition: all 1s ease;
