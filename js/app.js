@@ -1,7 +1,7 @@
 console.log("Boun giorno");
 
 $(document).ready(function() {
-
+let main_display = $("main").css("display");
   $("#nav li").mouseenter(function(e){
     if("nav__menu__submenu__item" === e.currentTarget.classList[1]){
       var w = $(this).children().eq(0).width();
@@ -18,7 +18,7 @@ $(document).ready(function() {
   });
   $("main").on("swiperight",function(e){
     let search_bar_display = $("#header__search-bar").css("display");
-    let main_display = $("main").css("display");
+    //let main_display = $("main").css("display");
     if(main_display === "flex"){
       if(search_bar_display === "block"){
         $("#header__search-bar").hide("slide",{direction:"right"});
@@ -32,7 +32,7 @@ $(document).ready(function() {
 
   $("main").on("swipeleft",function(e){
     let menu_display = $("#nav").css("display");
-    let main_display = $("main").css("display");
+    //let main_display = $("main").css("display");
     if(main_display === "flex"){
       if(menu_display === "block"){
         $("#nav").toggle("slide",{direction:"left"},500);

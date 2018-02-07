@@ -5,7 +5,7 @@
 
 .main-heading--mobile{
   display: block;
-  margin-top: 72px;
+  margin-top: 72px;//to position the main-heading in mobile screens bellow the navbar
   @media(min-width:map-get($breakpoints, small)+1px){
     display: none;
   }

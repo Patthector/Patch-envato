@@ -3,25 +3,24 @@
 //
 
 .header__search-bar__button-exit{
-  width: 100%;
   border: none;
-  background:$white;
-  color:$black;
-  font-size: rem(24,12);
-  font-weight:700;
+  display: block;
+  margin-left: auto;
+  background:$color-terciary;
+  color:$color_primary;
+  font-size: rem(24,$base-font-size);
   font-family: $font-family-heading;
-  text-align: right;
 }
 .form__input{
   border: none;
   width: 100%;
   display: inline-block;
   font-family: $font-family-heading;
-  font-size: rem(48,12);
-  font-weight: 200;
+  font-size: rem(48,$base-font-size);
+  font-weight: $font-weight-light;
   &::placeholder{
     color:$black;
-    font-weight: 700;
+    font-weight: $font-weight-extra-bold;
   }
 }
 .form{
@@ -33,5 +32,5 @@
   color:$color-text;
   font-family: $font-family-default;
   letter-spacing: .1px;
-  font-size:11px;
+  font-size:rem(11,$base-font-size);
 }

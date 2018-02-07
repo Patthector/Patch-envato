@@ -3,8 +3,8 @@
 //
 
 .header__mobile-navbar__item{
-  flex:1 50%;
-  font-size:rem(18,12);
+  flex:1 15%;
+  font-size:rem(18,$base-font-size);
   align-self: center;
   &--left{
     text-align: left;
@@ -16,16 +16,18 @@
     text-align:right;
   }
 }
+.icon-logo{
+  display: block;
+  width: 70%;
+}
 .logo{
   display: block;
   transform: translateY(-100px);
-  //font-size: rem(18,12);
-  width: 100%;
   font-family: $font-family-heading;
   color:$color-primary;
   margin: 0;
   padding: 0;
-  font-weight: 700;
+  font-weight: $font-weight-extra-bold;
   text-align: center;
   span{
     position: relative;
@@ -35,7 +37,7 @@
       position: absolute;
       top: 70%;
       right:-8px;
-      border: 3px solid yellow;
+      border: 3px solid $color-secondary;
       width: 0px;
     }
   }
