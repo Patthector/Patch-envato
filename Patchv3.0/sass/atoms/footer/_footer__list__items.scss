@@ -1,0 +1,50 @@
+//ATOMS
+//.....FOOTER__LIST__ITEMS
+//
+
+
+@import "compass/css3/border-radius";
+
+.footer__list__items{
+  & a{
+    color:rgba($color-terciary,.8);
+    font-size:rem(9,12);
+    font-family: $font-family-default;
+  }
+  &--arrow {
+    display: block;
+    order:-1;
+    width:100%;
+    text-align: center;
+    a{
+      color:$color-terciary;
+      font-size: rem(12,12);
+      @include border-radius(100%);
+      border-radius: 100%;
+      padding: 3px 8px 6px;
+
+    }
+    @media(min-width:map-get($breakpoints,xsmall)+1px){
+      order:0;
+    }
+  }
+  &--primary{
+    width:50%;
+    text-align: left;
+    a{
+      font-style: normal;
+      i{
+        color:$color-secondary;
+        font-size: rem(11,12);
+        font-weight: $font-weight-bold;
+        font-style: normal;
+        font-family:$font-family-heading;
+        letter-spacing: .3px;
+      }
+    }
+  }
+  &--secondary{
+    width:50%;
+    text-align:right;
+  }
+}

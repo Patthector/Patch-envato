@@ -1,0 +1,40 @@
+//LAYOUT
+//......CARD--PAG
+//
+
+/**
+*This is the behaivor of all the paragraphs in different environments(layouts)
+*taking always care of the behaivor of the overlaping post and avoiding
+*compromise content. That's the reason for the margins approach
+*/
+
+.card__pag{
+  font-family:$font-family-default;
+  color:$color-text;
+  margin: 0;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+  padding: 0;
+  font-size: rem(11.5,12);
+  @media(min-width:map-get($breakpoints,xlarge)){
+    font-size: rem(14,12);
+    line-height: rem(14+14/3,12);
+  }
+  line-height: rem(20,14);
+  &--wider-layout{
+    margin-left:10.5%;
+    margin-right:10.5%;
+  }
+  &--large-layout{
+    margin-left:0;
+    margin-right:0;
+  }
+  &--to-the-right{
+    text-align: right;
+    margin-right: 11.5%;
+  }
+  &--to-the-left{
+    text-align: left;
+    margin-left: 11.5%;
+  }
+}

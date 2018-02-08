@@ -1,0 +1,28 @@
+//ATOMS
+//......CARD__METAINFO__ITEM
+//
+
+.card__metainfo__item{
+  font-family: $font-family-heading;
+  font-size: rem(10,12);
+  text-transform: uppercase;
+  padding: 3px;
+  font-weight: 200;
+  &--background{
+    background: $color-secondary;
+    font-weight: 700;
+  }
+  &--span{
+    text-transform: none;
+  }
+  &--date{
+    color:$color-text-weak;
+    font-weight: 400;
+  }
+  &--to-the-left{
+    margin-right: 11.5%;
+  }
+  &--to-the-right{
+    margin-left: 11.5%;
+  }
+}

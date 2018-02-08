@@ -1,0 +1,25 @@
+//LAYOUT
+//......MENU-SOCIAL-MEDIA
+//
+
+.menu-social-media{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  @include reset-list;
+  @include reset-content(0,0,0,0,20px,0,20px,0);
+  li{
+    margin-right: 12px;
+    a{
+      padding: 3px 6px;
+      border:1px solid white;
+      border-radius: 3px;
+      &:hover{
+        background-color:yellow;
+        border-color:yellow;
+      }
+    }
+  }
+}

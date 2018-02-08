@@ -1,0 +1,23 @@
+//LAYOUT
+//.........HEADER__SEARCH-BAR
+//
+
+.header__search-bar{
+  display: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 8001;
+
+  form{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top:-100px;//to center the search bar
+  }
+}
