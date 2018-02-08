@@ -1,15 +1,12 @@
-//ATOMS
+//LAYOUT
 //.....CARD__IMG-TO-THE-LEFT-LAYOUT
 //
 
 .card__post--img-to-the-left-layout{
   width: 95%;
   margin:0 2.5%;
-  @media(min-width:map-get($breakpoints, large)){
-    position: absolute;
-    top: 0;
-    transition: all 1s ease;
-    //
+
+  @include mq(map-get($breakpoints, large)){
     width: 105%;
     margin-left: -5%;
     margin-right: 0;
@@ -17,5 +14,4 @@
     display: block;
     z-index: 6000;
   }
-
 }

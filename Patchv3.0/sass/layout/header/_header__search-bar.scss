@@ -14,10 +14,7 @@
   form{
     width: 90%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+    @include flexy(column nowrap,center);
     margin-top:-100px;//to center the search bar
   }
 }

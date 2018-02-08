@@ -2,14 +2,10 @@
 //......CARD--GALLERY-LAYOUT
 //
 
-
 .card__post--gallery-layout{
   width: 95%;
   margin: 0 2.5%;
-  @media (min-width:map-get($breakpoints, large)){
-    position: absolute;
-    top: 0;
-    transition: all 1s ease;
+  @include mq(map-get($breakpoints, large)){
     width:100%;
   }
   .gallery-layout{
@@ -26,6 +22,11 @@
     }
     &__item{
       position: relative;
+      &:hover span{
+        opacity: .4;
+        border:none;
+        @include transition(all,1s,ease);
+      }
     }
     .item--vertical-dual-action{
       grid-column-end: span 1;
@@ -43,18 +44,13 @@
       grid-column-end: span 1;
       grid-row-end: span 1;
     }
-
-    .img-border-left{
-      border-left: 5px solid white;
-    }
-    .img-border-right{
-      border-right: 5px solid white;
-    }
-    .img-border-top{
-      border-top: 5px solid white;
-    }
-    .img-border-bottom{
-      border-bottom: 5px solid white;
+    @each $size,$value in $gallery__img--border-size{
+      .img-border-#{$size} {
+        border-left: #{$value} solid white;
+        border-right: #{$value} solid white;
+        border-top: #{$value} solid white;
+        border-bottom: #{$value} solid white;
+      }
     }
   }
 }

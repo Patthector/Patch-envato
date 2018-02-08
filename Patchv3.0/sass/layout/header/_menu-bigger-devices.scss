@@ -4,8 +4,7 @@
 
 .menu-bigger-devices{
   @media(min-width:map-get($breakpoints, small)+1px){
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flexy(row wrap);
     z-index:1;
     position: relative;
     width: 60%;

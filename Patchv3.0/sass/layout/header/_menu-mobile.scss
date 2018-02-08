@@ -4,10 +4,7 @@
 
 .menu-mobile{
   @include reset-list;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: flex-start;
+  @include flexy(column nowrap,flex-start);
   width: 90%;
   margin:20px;
 }

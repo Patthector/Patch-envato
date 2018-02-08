@@ -7,18 +7,10 @@
   margin-left: 5%;
   margin-right: 5%;
   position: relative;
-  @media(min-width:map-get($breakpoints, large)){
-    position: absolute;
-    top: 0;
-    transition: all 1s ease;
-  }
 
   .img-background-container-layout{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
+    @include flexy(column nowrap,center);
     top: 0;
     left: 0;
     width: 100%;

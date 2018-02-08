@@ -2,6 +2,8 @@
 //.....HEADER__SEARCH-BAR--BOTTON-EXIT
 //
 
+@import "compass/css3/user-interface";
+
 .header__search-bar__button-exit{
   border: none;
   display: block;
@@ -18,6 +20,10 @@
   font-family: $font-family-heading;
   font-size: rem(48,$base-font-size);
   font-weight: $font-weight-light;
+  @include input-placeholder{
+    color:$black;
+    font-weight: $font-weight-extra-bold;
+  }
   &::placeholder{
     color:$black;
     font-weight: $font-weight-extra-bold;

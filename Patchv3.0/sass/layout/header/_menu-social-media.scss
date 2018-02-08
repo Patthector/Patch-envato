@@ -4,10 +4,7 @@
 
 .menu-social-media{
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  @include flexy(row nowrap,center);
   @include reset-list;
   @include reset-content(0,0,0,0,20px,0,20px,0);
   li{

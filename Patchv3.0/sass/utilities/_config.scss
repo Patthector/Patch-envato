@@ -30,10 +30,16 @@ $old-ie:                      false !default;
 
 $breakpoints: (
   xsmall:                     480px,
-  small:                      580px,
-  medium:                     660px,
+  small:                      660px,
+  medium:                     720px,
   large:                      1050px,
   xlarge:                     2048px,
+);
+
+$gallery__img--border-size:(
+  small:                      2px,
+  medium:                     3px,
+  large:                      5px,
 );
 
 

@@ -8,6 +8,10 @@
 //
 // Styleguide 10.1
 
+@import "compass/css3/transition";
+@import "compass/css3/flexbox";
+
+
 @mixin reset-list {
   list-style: none;
   margin: 0;
@@ -153,3 +157,20 @@
 // @usage - `@include invisible`
 
 @mixin invisible { visibility: hidden; }
+
+
+//ANIMATIONS
+@mixin transition($property,$duration,$timing-function,$delay: null){
+  @include transition-property($property);
+  @include transition-duration($duration);
+  @include transition-timing-function($timing-function);
+}
+
+//FLEXBOX DESIGN
+@mixin flexy($flow,$justify-content:null,$flex:null){
+  @include display-flex(flex);
+  @include flex-flow($flow);
+  @include justify-content($justify-content);
+  @include flex($flex);
+  @content;
+}

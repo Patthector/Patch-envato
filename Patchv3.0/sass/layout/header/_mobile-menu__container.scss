@@ -6,11 +6,8 @@
   @media(max-width:map-get($breakpoints, small)){
     overflow-y: auto;
   }
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 1 100%;
-  justify-content: flex-start;
+  @include flexy(row wrap,flex-start,1 100%);
+  //flex: 1 100%;
   width: 80%;
   float: left;
 }

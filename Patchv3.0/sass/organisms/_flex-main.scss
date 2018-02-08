@@ -1,6 +1,8 @@
 //ORGANISMS
 //.........FLEX-MAIN
 //
+@import "compass/css3/flexbox";
+
 .ui-loader h1,
 .ui-corner-all h1,
 .ui-body-a h1,
@@ -11,19 +13,16 @@ body{
   margin: 0;
 }
 .flex-main{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  @media(min-width:map-get($breakpoints, xsmall)){
+  @include flexy(column nowrap,center);
+  @include mq(map-get($breakpoints, xsmall)){
     width: 80%;
     padding: 0 10%;
   }
-  @media(min-width:map-get($breakpoints, xsmall)+100px){
+  @include mq(map-get($breakpoints, xsmall)+100px){
     width: 70%;
     padding: 0 15%;
   }
-  @media(min-width:map-get($breakpoints, small)-40px){
+  @include mq(map-get($breakpoints, small)+100px){
     width: 60%;
     padding: 0 20%;
   }
