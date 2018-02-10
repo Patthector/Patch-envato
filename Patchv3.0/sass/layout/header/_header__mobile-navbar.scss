@@ -12,7 +12,7 @@
   @include reset-list;
   padding:10px;
   z-index: 8000;
-  @include mq(map-get($breakpoints, small)+1px){
+  @include mq(map-get($breakpoints, medium)){
     display: none;
   }
 }

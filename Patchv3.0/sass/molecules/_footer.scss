@@ -8,9 +8,9 @@
     padding: 12px 24px;
     margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    @media(min-width:map-get($breakpoints,xsmall)+1px){
+    @include mq(map-get($breakpoints, xsmall)){
       padding: 12px 24px;
       margin: 0;
       display: flex;

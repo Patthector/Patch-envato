@@ -3,7 +3,7 @@
 //
 
 .menu-bigger-devices{
-  @media(min-width:map-get($breakpoints, small)+1px){
+  @media(min-width:map-get($breakpoints, medium)){
     @include flexy(row wrap);
     z-index:1;
     position: relative;

@@ -1,21 +1,22 @@
-console.log("Boun giorno");
+console.log("Boun pomerigio");
 
 $(document).ready(function() {
 let main_display = $("main").css("display");
   $("#nav li").mouseenter(function(e){
     if("nav__menu__submenu__item" === e.currentTarget.classList[1]){
       var w = $(this).children().eq(0).width();
-
       $(this).children().eq(1).css('left',w+5);
     }
   });
 
   $("#icon-menu").click(function(e){
     e.preventDefault();
-    $("#icon-menu").hide("slide",{direction:"left"});
     $("#nav").toggle("slide",{direction:"left"},200);
-
+    $("#nav").animate({
+      "background-color":"rgba(0,0,0,.5)"
+    }, 500);
   });
+
   $("main").on("swiperight",function(e){
     let search_bar_display = $("#header__search-bar").css("display");
     //let main_display = $("main").css("display");
@@ -24,19 +25,23 @@ let main_display = $("main").css("display");
         $("#header__search-bar").hide("slide",{direction:"right"});
       }
       else{
-        $("#icon-menu").hide("slide",{direction:"left"});
         $("#nav").toggle("slide",{direction:"left"},200);
+        $("#nav").animate({
+          "background-color":"rgba(0,0,0,.5)"
+        }, 500);
       }
     }
   });
 
   $("main").on("swipeleft",function(e){
     let menu_display = $("#nav").css("display");
-    //let main_display = $("main").css("display");
     if(main_display === "flex"){
       if(menu_display === "block"){
-        $("#nav").toggle("slide",{direction:"left"},500);
-        $("#icon-menu").show("slide",{direction:"left"});
+        $("#nav").animate({
+          "background-color":"transparent"
+        }, 200,function(){
+          $("#nav").toggle("slide",{direction:"left"},500);
+        });
       }
       else{
         $("#header__search-bar").show("slide",{direction:"right"});
@@ -48,16 +53,9 @@ let main_display = $("main").css("display");
     }
   });
 
-  $("#icon-menu-gosht").click(function(e){
-    e.preventDefault();
-    $("#nav").toggle("slide",{direction:"left"},500);
-    $("#icon-menu").show("slide",{direction:"left"});
-  });
-
   $("#link-search").click(function(e){
     e.preventDefault();
     $("#header__search-bar").show("slide",{direction:"right"});
-
     $("#header__search-bar__button-exit").click(function(e){
         $("#header__search-bar").hide("slide",{direction:"right"});
     });
@@ -66,6 +64,25 @@ let main_display = $("main").css("display");
   $("#arrow-to-the-top").click(function(e){
     e.preventDefault();
     $("html, body").animate({ scrollTop: 0 }, 700);
+  });
+
+  //hover and anchor in the menu with big screens
+  $(".nav__menu__submenu__item").hover(function(){
+    let width = $(".nav__menu__submenu__item a").width();
+    let coordinates = $(this).offset();
+    console.log(width);
+    $(this).children(".submenu").css("top",coordinates.top - 10); //this is the margin of the menu, and we removed to aliniate the element with the menu
+    $(this).children(".submenu").css("left",coordinates.left + width);
+  });
+
+  $("#nav").on("tap",function(e){
+    if(e.target.tagName === "NAV"){
+      $("#nav").animate({
+        "background-color":"transparent"
+      }, 200,function(){
+        $("#nav").toggle("slide",{direction:"left"},500);
+      });
+    }
   });
 
   var lastScrollPosition = 0;
@@ -100,12 +117,12 @@ let main_display = $("main").css("display");
         BuildingCard(children.eq(i),i);
       }
       else{
-        BuildingCard(children.eq(i));//get just the article
+        BuildingCard(children.eq(i),-1);//get just the article
       }
     }
   }
 
-  function BuildingCard(card,o=-1){
+  function BuildingCard(card,o){
     let array;
     let height = 0;
     let arrayLength;
@@ -190,6 +207,9 @@ let main_display = $("main").css("display");
     if(main_display === "grid"){//if is the grid show the menu
       $("#nav").css("display","block");
     }
+    else{
+      $("#nav").css("display","none");
+    }
     CreatingTheGrid();
   })
   $(window).on('orientationchange',function(){
@@ -198,7 +218,9 @@ let main_display = $("main").css("display");
     if(main_display === "grid"){//if is the grid show the menu
       $("#nav").css("display","block");
     }
+    else{
+      $("#nav").css("display","none");
+    }
     CreatingTheGrid();
   })
-
 });

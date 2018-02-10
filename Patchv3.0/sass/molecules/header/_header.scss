@@ -6,13 +6,10 @@ header{
   top: 0;
   left: 0;
   width:100%;
-  display: flex;
   position: fixed;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
+  @include flexy(column nowrap,center);
   z-index: 8000;
-  @media(min-width: map-get($breakpoints, small)+1px){
+  @include mq(map-get($breakpoints,medium )){
     position: relative;
     margin-bottom: 20px;
     margin-top:60px;

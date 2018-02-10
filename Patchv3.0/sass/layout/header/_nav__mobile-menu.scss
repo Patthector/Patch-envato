@@ -1,7 +1,7 @@
 //LAYOUT
 //.......NAV__MOBILE-MENU
 //
-@media(max-width:map-get($breakpoints, small)){
+@media(max-width:map-get($breakpoints, medium)-1px){
   .nav__mobile-menu{
     display: none;
     position:absolute;

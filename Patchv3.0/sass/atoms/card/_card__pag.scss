@@ -16,7 +16,7 @@
   margin-right: 6.5%;
   padding: 0;
   font-size: rem(11.5,12);
-  @media(min-width:map-get($breakpoints,xlarge)){
+  @include mq(map-get($breakpoints, xlarge)){
     font-size: rem(14,12);
     line-height: rem(14+14/3,12);
   }

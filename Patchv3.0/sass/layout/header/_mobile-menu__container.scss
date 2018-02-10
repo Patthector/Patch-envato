@@ -3,11 +3,12 @@
 //
 
 .mobile-menu__container{
-  @media(max-width:map-get($breakpoints, small)){
+  @media(max-width:map-get($breakpoints, medium)-1px){
+    max-height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
+
   }
-  @include flexy(row wrap,flex-start,1 100%);
-  //flex: 1 100%;
-  width: 80%;
-  float: left;
+  //@include flexy(row wrap,flex-start,1 100%);
+  display: inline-block;
 }

@@ -29,11 +29,11 @@ $old-ie:                      false !default;
 // $breakpoints - {map}
 
 $breakpoints: (
-  xsmall:                     480px,
-  small:                      660px,
-  medium:                     720px,
-  large:                      1050px,
-  xlarge:                     2048px,
+  xsmall:                     480px,//mobile size
+  small:                      660px,//mobile size BUT big header
+  medium:                     720px,//tow colummns grid
+  large:                      1050px,//three column grid
+  xlarge:                     2048px,//four column grid
 );
 
 $gallery__img--border-size:(

@@ -11,11 +11,11 @@
   padding: 0;
   font-weight: $font-weight-extra-bold;
   text-align: center;
-  @media(min-width:map-get($breakpoints,small)+1){
+  @include mq(map-get($breakpoints, medium)){
     text-align: left;
     display: block;
   }
-  @media(min-width:map-get($breakpoints,xlarge)){
+  @include mq(map-get($breakpoints, xlarge)){
     font-size: rem(72,$base-font-size);
   }
   span{

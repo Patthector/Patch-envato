@@ -19,22 +19,22 @@
     a{
       color:$color-terciary;
       font-size: rem(12,12);
+      border:.4px solid $color-secondary;
       @include border-radius(100%);
-      border-radius: 100%;
       padding: 3px 8px 6px;
 
     }
-    @media(min-width:map-get($breakpoints,xsmall)+1px){
+    @include mq(map-get($breakpoints, xsmall)){
       order:0;
     }
   }
   &--primary{
     width:50%;
-    text-align: left;
+    //text-align: left;
     a{
       font-style: normal;
       i{
-        color:$color-secondary;
+        color:$color-terciary;
         font-size: rem(11,12);
         font-weight: $font-weight-bold;
         font-style: normal;
@@ -45,6 +45,6 @@
   }
   &--secondary{
     width:50%;
-    text-align:right;
+    //text-align:right;
   }
 }

@@ -3,7 +3,7 @@
 //
 
 .nav__bigger-devices-menu{
-  @media(min-width:map-get($breakpoints, small)+1px){
+  @media(min-width:map-get($breakpoints, medium)){
     display: block;
   }
 }
