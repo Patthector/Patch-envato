@@ -7,6 +7,9 @@
 // $base-font-size - {number}
 
 $base-font-size:              12;
+$paragraph-font-size-reg:     rem(13,12);
+$paragraph-font-size-sm:      rem(12,12);
+$paragraph-font-size-lg:      rem(14,12);
 
 // $base-line-height
 //
@@ -15,6 +18,7 @@ $base-font-size:              12;
 // $base-line-height - {number}
 
 $base-line-height:            24;
+
 
 // Font Stacks
 
@@ -84,7 +88,8 @@ $font-family-display:         $font-family-sans;
 // @requires - `$font-family-sans`
 
 
-$font-family-default:         'Open Sans', sans-serif;
+//$font-family-default:       'Open Sans', sans-serif;
+$font-family-default:         'Lato', sans-serif;
 $font-family-heading:         'Oswald', sans-serif;
 
 //FONT-WEIGHT

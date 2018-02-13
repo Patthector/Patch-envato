@@ -5,13 +5,14 @@
   display: none;
   width: 100%;
   font-family: $font-family-heading;
-  font-size:rem(60,$base-font-size);
+  font-size:rem(48,$base-font-size);
   color:$black;
   margin: 0;
   padding: 0;
   font-weight: $font-weight-extra-bold;
   text-align: center;
   @include mq(map-get($breakpoints, medium)){
+    font-size:rem(56,$base-font-size);
     text-align: left;
     display: block;
   }

@@ -4,20 +4,26 @@
 
 .card__metainfo__item{
   font-family: $font-family-heading;
-  font-size: rem(10,12);
+  font-size: rem(9,12);
+  @include mq(map-get($breakpoints, small)){
+    font-size: rem(10,12);
+  }
+  @include mq(map-get($breakpoints, xlarge)){
+    font-size: rem(12,12);
+  }
   text-transform: uppercase;
   padding: 3px;
-  font-weight: 200;
+  font-weight: $font-weight-light;
   &--background{
     background: $color-secondary;
-    font-weight: 700;
+    font-weight: $font-weight-extra-bold;
   }
   &--span{
     text-transform: none;
   }
   &--date{
     color:$color-text-weak;
-    font-weight: 400;
+    font-weight: $font-weight-reg;
   }
   &--to-the-left{
     margin-right: 11.5%;

@@ -10,7 +10,7 @@
   left: 0;
   width:100%;
   @include reset-list;
-  padding:10px;
+  padding: 0 10px;
   z-index: 8000;
   @include mq(map-get($breakpoints, medium)){
     display: none;

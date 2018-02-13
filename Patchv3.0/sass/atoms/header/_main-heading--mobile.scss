@@ -5,7 +5,7 @@
 
 .main-heading--mobile{
   display: block;
-  margin-top: 72px;//to position the main-heading in mobile screens bellow the navbar
+  margin-top: 54px;//to position the main-heading in mobile screens bellow the navbar
   @include mq(map-get($breakpoints, medium)){
     display: none;
   }
