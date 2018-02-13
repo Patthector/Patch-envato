@@ -38,10 +38,7 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
-	
-	
-	<!--GOOGLE WEBMASTER TAG-->
-	<meta name="google-site-verification" content="3SHZFG9TqHdJmoNR3jcE6VqVCg_fqelTvmqNty_drU8" />
+
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
     <!-- http://mathiasbynens.be/notes/rel-shortcut-icon -->
     <!-- http://mathiasbynens.be/notes/touch-icons
@@ -49,10 +46,10 @@
     <link rel="icon" type="image/png" href="favicon.png">-->
 
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:300i,400,700" rel="stylesheet">
     <!-- CSS, you gotta have style -->
     <link rel="stylesheet" href="js/jquery-ui.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
 
     <!-- Modernizer, cause some browsers suck -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -94,8 +91,9 @@
             <li class = "nav__menu__item"><a class = "menu-link" href = "#">Video</a></li>
             <li class = "nav__menu__item"><a class = "menu-link" href = "#">Music</a></li>
             <li class = "nav__menu__item"><a class = "menu-link" href = "#">About Us</a></li>
+            <li><p class = "not-count mobile-menu__description"><span>&reg;All Rights Reserved. Aknowledgement to all the <a href = "#">contributors</a>. Theme made by PaTTor with love.</span><br/>Inspared by <i>Patch Theme</i></p></li>
           </ul>
-          <p class = "not-count mobile-menu__description"><span>&reg;All Rights Reserved. Aknowledgement to all the <a href = "#">contributors</a>. Theme made by PaTTor with love.</span><br/>Inspared by <i>Patch Theme</i></p>
+
           <ul class = "menu-social-media">
             <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
             <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
@@ -103,7 +101,6 @@
             <li class = "nav__social-media-menu__item"><a href = "#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
           </ul>
         </div>
-          <div class = "mobile-menu__icon-container"><a id = "icon-menu-gosht"  class = "mobile-menu__gosht-icon" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
         </nav>
       </header>
       <h1 class = "main-heading main-heading--mobile">PATC<span>H</span></h1>
@@ -115,7 +112,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--large-img-layout">
+        <article class = "card__post card__post--large-img-layout">
           <div class = "container-img">
             <img class ="card__img" src = "./img/libro.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -134,7 +131,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--wide-img-layout">
+        <article class = "card__post card__post--wide-img-layout">
           <div class = "container-img">
             <img class = "card__img"  src = "./img/mucco.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -153,43 +150,43 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--gallery-layout">
+        <article class = "card__post card__post--gallery-layout">
           <div class = "gallery-layout">
             <ul class = "gallery-layout__list gallery-layout__list--fifth-grid">
               <li class = "gallery-layout__item item--action">
-                <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/gift1.jpeg" alt = "photo#"/>
+                <img class="card__img img-border-large" src = "./img/gift1.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--action">
-                <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/gift2.jpeg" alt = "photo#"/>
+                <img class="card__img img-border-large" src = "./img/gift2.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--horizontal-triple-action">
-                <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/gift3.jpeg" alt = "photo#"/>
+                <img class="card__img img-border-large" src = "./img/gift3.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--action">
-                <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/gift4.jpeg" alt = "photo#"/>
+                <img class="card__img img-border-large" src = "./img/gift4.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--horizontal-triple-action">
-                <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/gift5.jpeg" alt = "photo#"/>
+                <img class="card__img img-border-large" src = "./img/gift5.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--action">
-                <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/gift6.jpeg" alt = "photo#"/>
+                <img class="card__img img-border-large" src = "./img/gift6.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--horizontal-dual-action">
-                <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/gift7.jpeg" alt = "photo#"/>
+                <img class="card__img img-border-large" src = "./img/gift7.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--action">
-                <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/gift8.jpeg" alt = "photo#"/>
+                <img class="card__img img-border-large" src = "./img/gift8.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--horizontal-dual-action">
-                <img class="img-border-top img-border-bottom img-border-left img-border-right " src = "./img/gift9.jpeg" alt = "photo#"/>
+                <img class="card__img img-border-large" src = "./img/gift9.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
             </ul>
@@ -207,7 +204,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--img-to-the-right-layout">
+        <article class = "card__post card__post--img-to-the-right-layout">
           <div class = "container-img container-img--right">
             <img class = "card__img" src = "./img/thewhole.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -226,7 +223,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--wide-img-layout">
+        <article class = "card__post card__post--wide-img-layout">
           <div class = "container-img">
             <img class = "card__img" src = "./img/animale.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -244,7 +241,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--large-img-layout">
+        <article class = "card__post card__post--large-img-layout">
           <div class = "container-img">
             <img class = "card__img" src = "./img/lei.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -262,7 +259,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--img-to-the-left-layout">
+        <article class = "card__post card__post--img-to-the-left-layout">
           <div class = "container-img container-img--left">
             <img class = "card__img" src = "./img/walkinginto.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -282,7 +279,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--wide-img-layout">
+        <article class = "card__post card__post--wide-img-layout">
           <div class = "container-img">
             <img class = 'card__img' src = "./img/yellowforest.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -301,7 +298,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--img-background-layout">
+        <article class = "card__post card__post--img-background-layout">
           <div class = "container-img">
             <img class = "card__img" src = "./img/lafamiglia.jpeg" alt = "photo#" />
           </div>
@@ -318,7 +315,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--img-to-the-right-layout">
+        <article class = "card__post card__post--img-to-the-right-layout">
           <div class = "container-img container-img--right">
             <img class = "card__img" src = "./img/watchme.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -336,7 +333,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--large-img-layout">
+        <article class = "card__post card__post--large-img-layout">
           <div class = "container-img">
             <img class = "card__img" src = "./img/laragazzarossa.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -354,7 +351,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--wider-img-layout">
+        <article class = "card__post card__post--wider-img-layout">
           <div class = "container-img">
             <img class="card__img" src = "./img/motoboy.jpeg" alt = "photo#" />
             <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -372,7 +369,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--quote-layout">
+        <article class = "card__post card__post--quote-layout">
         <div class = "quote-layout">
         </div>
         <h2 class = "card__heading card__heading--quote-layout">Everything You Wanted to Know About animals and Were Too Embarrassed to Ask</h2>
@@ -388,7 +385,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--img-to-the-right-layout">
+        <article class = "card__post card__post--img-to-the-right-layout">
         <div class = "container-img container-img--right">
           <img class = "card__img" src = "./img/boots.jpeg" alt = "photo#" />
           <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -408,7 +405,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--img-to-the-right-layout">
+        <article class = "card__post card__post--img-to-the-right-layout">
         <div class = "container-img container-img--right">
           <img class = "card__img" src = "./img/pranzo.jpeg" alt = "photo#" />
           <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -428,7 +425,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--wider-img-layout">
+        <article class = "card__post card__post--wider-img-layout">
         <div class = "container-img">
           <img class = "card__img" src = "./img/elefanti.jpeg" alt = "photo#" />
           <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -448,7 +445,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--large-img-layout">
+        <article class = "card__post card__post--large-img-layout">
         <div class = "container-img">
           <img class = "card__img" src = "./img/farfala.jpeg" alt = "photo#" />
           <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -466,7 +463,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--img-to-the-right-layout">
+        <article class = "card__post card__post--img-to-the-right-layout">
         <div class = "container-img container-img--right">
           <img class = "card__img" src = "./img/cavallo.jpeg" alt = "photo#" />
           <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -486,19 +483,19 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--gallery-layout">
+        <article class = "card__post card__post--gallery-layout">
           <div class = "gallery-layout">
             <ul class = "gallery-layout__list">
               <li class = "gallery-layout__item item--vertical-dual-action">
-                <img class = "card__img img-border-top img-border-left img-border-bottom img-border-right" src = "./img/te.jpeg" alt = "photo#" />
+                <img class = "card__img img-border-medium" src = "./img/te.jpeg" alt = "photo#" />
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--action">
-                <img class = "card__img img-border-top img-border-right" src = "./img/flag.jpeg" alt = "photo#"/>
+                <img class = "card__img img-border-medium" src = "./img/flag.jpeg" alt = "photo#"/>
                 <span></span>
               </li>
               <li class = "gallery-layout__item item--action">
-                <img class = "card__img img-border-top img-border-right img-border-bottom" src = "./img/bahia.jpeg" alt = "photo#" />
+                <img class = "card__img img-border-medium" src = "./img/bahia.jpeg" alt = "photo#" />
                 <span></span>
               </li>
             </ul>
@@ -516,7 +513,7 @@
             <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
           </ul>
         </div>
-        <article class = "card__post--img-background-layout">
+        <article class = "card__post card__post card__post--img-background-layout">
           <div class = "container-img">
             <img class = "card__img" src = "./img/steps.jpeg" alt = "photo#" />
           </div>
@@ -533,7 +530,7 @@
           <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
         </ul>
       </div>
-      <article class = "card__post--img-to-the-left-layout">
+      <article class = "card__post card__post--img-to-the-left-layout">
       <div class = "container-img container-img--left">
         <img class = "card__img" src = "./img/ladonna.jpeg" alt = "photo#" />
         <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -553,7 +550,7 @@
           <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
         </ul>
       </div>
-      <article class = "card__post--quote-layout">
+      <article class = "card__post card__post--quote-layout">
       <div class = "quote-layout">
       </div>
       <h2 class = "card__heading card__heading--quote-layout">la cosa piu importante della vita 'e tu le amore mio..</h2>
@@ -569,7 +566,7 @@
           <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
         </ul>
       </div>
-      <article class = "card__post--wider-img-layout">
+      <article class = "card__post card__post--wider-img-layout">
       <div class = "container-img">
         <img class = "card__img" src = "./img/colazione.jpeg" alt = "photo#" />
         <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -587,7 +584,7 @@
           <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
         </ul>
       </div>
-      <article class = "card__post--img-to-the-right-layout">
+      <article class = "card__post card__post--img-to-the-right-layout">
       <div class = "container-img container-img--right">
         <img class = "card__img" src = "./img/uomo.jpeg" alt = "photo#" />
         <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -607,7 +604,7 @@
           <li class = "card__metainfo__item card__metainfo__item--date" ><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
         </ul>
       </div>
-      <article class = "card__post--large-img-layout">
+      <article class = "card__post card__post--large-img-layout">
       <div class = "container-img">
         <img class = "card__img" src = "./img/farfala.jpeg" alt = "photo#" />
         <span class = "card__span--opaque"><a href = "#">Read More</a></span>
@@ -625,20 +622,20 @@
           <li class = "card__metainfo__item card__metainfo__item--date"><a href = "#"><span class = "card__metainfo__item--span">/ </span>MM DD,YYYY</a></li>
         </ul>
       </div>
-      <article class = "card__post--gallery-layout">
+      <article class = "card__post card__post--gallery-layout">
         <div class = "gallery-layout">
           <ul class = "gallery-layout__list">
             <li class = "gallery-layout__item item--horizontal-dual-action">
-              <img class = "card__img img-border-top" src = "./img/fruttarossa.jpeg" alt = "photo#" />
-              <span></span>
+              <img class = "card__img img-border-medium" src = "./img/fruttarossa.jpeg" alt = "photo#" />
+              <span class = "gallery-layout__span--opaque"></span>
             </li>
             <li class = "gallery-layout__item item--horizontal-dual-action">
-              <img class = "card__img img-border-top" src = "./img/ilalbero.jpeg" alt = "photo#"/>
-              <span></span>
+              <img class = "card__img img-border-medium" src = "./img/ilalbero.jpeg" alt = "photo#"/>
+              <span class = "gallery-layout__span--opaque"></span>
             </li>
             <li class = "gallery-layout__item item--horizontal-dual-action">
-              <img class = "card__img img-border-top" src = "./img/trelimoni.jpeg" alt = "photo#" />
-              <span></span>
+              <img class = "card__img img-border-medium" src = "./img/trelimoni.jpeg" alt = "photo#" />
+              <span class = "gallery-layout__span--opaque"></span>
             </li>
           </ul>
         </div>
@@ -653,13 +650,20 @@
       <ul class = "footer__list">
         <li class = "footer__list__items footer__list__items--primary">
           <a href = "#">Theme by <i>PaTTor</i></a>
-        </li>
-        <li class = "footer__list__items footer__list__items--arrow">
-          <a id = "arrow-to-the-top" href = "#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
-        </li>
-        <li class = "footer__list__items footer__list__items--secondary">
           <a href = "#"><span>Contacts</span> / <span>About</span></a>
         </li>
+          <li class = "footer__list__items footer__list__items--arrow">
+            <a id = "arrow-to-the-top" href = "#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+          </li>
+        <li class = "footer__list__items footer__list__items--social">
+          <ul class = "menu-social-media">
+            <li class = "social-media-menu__item"><a href = "#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li class = "social-media-menu__item"><a href = "#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li class = "social-media-menu__item"><a href = "#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li class = "social-media-menu__item"><a href = "#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          </ul>
+        </li>
+
       </ul>
     </footer>
 
